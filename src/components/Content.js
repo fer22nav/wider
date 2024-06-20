@@ -1,21 +1,23 @@
+
 const Content = () => (
   <main>
     <h1 className="visually-hidden">Home wider accessibility</h1>
     <section>
-      <h2>Más que accesibilidad</h2>
+      <h2>Hacemos más que accesibilidad</h2>
       <p>Estrategias escalables para cada cliente. Experiencias memorables para todas las personas.</p>
       <a href='#'>Conocer al equipo</a>
+      <a href='#'>Leer más sobre servicios</a>
     </section>
 
     <section>
-      <div class="image-container">
+      <div className="image-container">
 
         {/* <img src="imagen1.jpg" alt="Descripción de la imagen 1" /> */}
         <p>Chief Accessibility Officer.
           W3C Invited Expert.
           CPWA, WAS, CPACC.</p>
       </div>
-      <div class="image-container">
+      <div className="image-container">
         {/* <img src="imagen1.jpg" alt="Descripción de la imagen 1" /> */}
         <p>Diseñadora UX/UI.
           Especialista en accesibilidad digital.
