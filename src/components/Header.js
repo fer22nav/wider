@@ -1,5 +1,5 @@
 import Navigation from "./Navigation";
-import styles from './header.module.css';
+import styles from '../styles/header.module.css';
 import Image from "next/image";
 
 const Header = () => (

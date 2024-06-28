@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from './header.module.css';
+import styles from '../styles/header.module.css';
 
 const Navigation = () => (
   <nav aria-label="Principal" className={styles.nav}>
@@ -8,10 +8,10 @@ const Navigation = () => (
         <Link href="/">Inicio</Link>
       </li>
       <li>
-        <Link href="/about">Servicios</Link>
+        <Link href="/services">Servicios</Link>
       </li>
       <li>
-        <Link href="/contact" aria-label="Conocer al equipo">Equipo</Link>
+        <Link href="/team" aria-label="Conocer al equipo">Equipo</Link>
       </li>
       <li>
         <Link href="/contact">Contacto</Link>
