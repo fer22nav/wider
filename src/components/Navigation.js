@@ -11,7 +11,7 @@ const Navigation = () => (
         <Link href="/services">Servicios</Link>
       </li>
       <li>
-        <Link href="/team" aria-label="Conocer al equipo">Equipo</Link>
+        <Link href="/team" aria-label="Conocer al equipo">Sobre nosotros</Link>
       </li>
       <li>
         <Link href="/contact">Contacto</Link>
