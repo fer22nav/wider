@@ -1,10 +1,8 @@
-import { Inter } from "next/font/google";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Head from "next/head";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Home wider accessibility",
@@ -19,7 +17,7 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="description" content={metadata.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div className={inter.className}>
+      <div>
         <Header />
         <main>
           <Component {...pageProps} />

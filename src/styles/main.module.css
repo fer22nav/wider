@@ -1,0 +1,16 @@
+/* .minWidth {
+  max-width: 1440px;
+  margin: 0 auto;
+} */
+
+.bgVector1 {
+  background: transparent;
+  background-image: url('/images/vector-1.svg');
+  background-size: contain;
+  /* or contain, depending on your design needs */
+  background-position: center;
+  /* to center the image */
+  background-repeat: no-repeat;
+  height: 560px;
+  width: 100%;
+}

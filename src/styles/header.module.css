@@ -1,16 +1,24 @@
 .header {
   background: transparent;
-  padding: 20px;
+  background-image: url('/images/Back-bloque-1.svg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.container {
+  padding-top: 36px;
+  padding-bottom: 36px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  background-color: #0A164F;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .logo img {
-  height: 40px;
-  /* Ajusta el tamaño del logo según tus necesidades */
+  width: 176px;
+  height: 47px;
 }
 
 .nav {
@@ -28,17 +36,36 @@
 
 .navList li {
   margin: 0;
+  position: relative;
 }
 
 .navList li a {
-  color: #ffffff;
   text-decoration: none;
-  font-weight: bold;
+  color: var(--color-white);
 }
 
 .navList li a:hover {
-  color: #d6ff14;
-  /* Color amarillo verdoso del subrayado */
+  color: var(--color-lima);
+}
+
+.menuIcon {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease;
+}
+
+.active .pNav {
+  color: var(--color-lima);
+}
+
+.active .menuIcon {
+  opacity: 1;
+}
+
+.navList li:not(.active) .menuIcon {
+  opacity: 0;
 }
 
 .languageSwitch {
@@ -47,11 +74,21 @@
 }
 
 .languageSwitch a {
-  color: #d6ff14;
+  color: var(--color-lima);
   text-decoration: none;
   font-weight: bold;
 }
 
 .languageSwitch a:hover {
   text-decoration: underline;
+}
+
+.pNav {
+  color: var(--color-white);
+  font-family: var(--font-nunito-sans);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.14px;
 }
