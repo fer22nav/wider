@@ -46,7 +46,7 @@ export default function Index() {
                   width={105}
                   height={20}
                   className="mt-2 mb-4"
-                  src="/images/line.svg"
+                  src="/images/line-1.svg"
                   alt="Descripción de la imagen 1" />
                 <p className="p-l color-grey">Trabajamos en red con especialistas
                   de<br /> diferentes disciplinas para potenciar <br />el valor
@@ -139,37 +139,69 @@ export default function Index() {
           </Row>
         </div>
       </section>
-      <section>
-      </section>
-
-      <section>
-        <h2>Procesos más eficientes, soluciones más sólidas y resultados más sostenibles.</h2>
-        <p>Ofrecemos soluciones personalizadas, sólidas y realistas. Construimos planes de acción adaptados a los objetivos y cultura de cada empresa.</p>
-        <a href='#'>Contactar al equipo</a>
-      </section>
-
-      <section>
-        <h2>Procesos más eficientes, soluciones sólidas y resultados sostenibles</h2>
-        <p>Ofrecemos soluciones personalizadas, sólidas y realistas. Construimos planes de acción adaptados a los objetivos y cultura de cada empresa. </p>
-        <h2>Nuestra Experiencia</h2>
-        <div >
-          <p>+30</p>
-          <p>Paises diferentes</p>
+      <section className="background-image-section-3 pt-185">
+        <div className="section-container">
+          <Row className="">
+            <Col xs={12} md={6} lg={6} >
+              <h2 className="titulo-l color-white">Procesos más eficientes, soluciones sólidas y resultados sostenibles</h2>
+              <Image
+                width={105}
+                height={20}
+                className="mt-2 mb-4"
+                src="/images/line-2.svg"
+                alt="Descripción de la imagen 1" />
+              <p className="p-l color-white">Ofrecemos soluciones personalizadas, sólidas y realistas. Construimos planes de acción adaptados a los objetivos y cultura de cada empresa. </p>
+            </Col>
+            <Col xs={12} md={6} lg={6} >
+              <Image src="/images/phone-guy.svg"
+                className=""
+                width={690}
+                height={600}
+                alt="Wider Logo" />
+            </Col>
+          </Row>
+          <Row className="pt-5rm">
+            <div className="d-flex justify-content-center">
+              <h2 className="titulo-xl color-white">Nuestra Experiencia</h2>
+            </div>
+            <Col xs={12} md={6} lg={4}  >
+              <p className="numbers-home">+30</p>
+              <p className="roboto">Paises diferentes</p>
+            </Col>
+            <Col xs={12} md={6} lg={4} >
+              <p className="numbers-home">+200</p>
+              <p className="roboto">Demandas revisadas</p>
+            </Col>
+            <Col xs={12} md={6} lg={4} >
+              <p className="numbers-home">+10 mil</p>
+              <p className="roboto">Personas capacitadas</p>
+            </Col>
+          </Row>
         </div>
-        <div >
-          <p>+200</p>
-          <p>Demandas revisadas</p>
-        </div>
-        <div >
-          <p>+10 mil</p>
-          <p>Personas capacitadas</p>
-        </div>
-      </section>
-
-      <section>
-        <img src="imagen1.jpg" alt="Descripción de la imagen 1" />
-        <h2>Podés contactarnos desde donde estes.</h2>
-        <button >Contactanos</button>
+        <div className={styles.bgVector3}></div>
+        <div className="section-container">
+          <Row className="">
+            <Col xs={12} md={6} lg={5} >
+              <Image
+                width={450}
+                height={360}
+                className="mt-2 mb-4"
+                src="/images/people.svg"
+                alt="Descripción de la imagen 1" />
+            </Col>
+            <Col xs={12} md={6} lg={7} >
+              <div className="d-flex flex-column justify-content-around ">
+                <h2 className="titulo-xl color-white">Podés contactarnos desde donde estes.</h2>
+                <Image
+                  width={105}
+                  height={20}
+                  className="mt-4 mb-5"
+                  src="/images/line-3.svg"
+                  alt="Descripción de la imagen 1" />
+                <button className="button-lima color-white">Contactanos</button></div>
+            </Col>
+          </Row>
+        </div >
       </section>
     </div >
   );

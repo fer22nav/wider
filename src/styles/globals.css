@@ -81,6 +81,7 @@ a:hover {
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
+  /* letter-spacing: -2.1px; */
 }
 
 .titulo-l {
@@ -172,6 +173,28 @@ a:hover {
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
+}
+
+.numbers-home {
+  color: var(--color-lima);
+  text-align: center;
+  font-family: var(--font-readex-pro);
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 0;
+  /* 108px */
+}
+
+.roboto {
+  color: #FDF8FC;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .color-lima {
@@ -287,6 +310,23 @@ a:hover {
   /* make sure the section takes up the full height */
 }
 
+.background-image-section-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #121133;
+  background-image: url('/images/back-bloque-3.svg');
+  background-size: cover;
+  /* or contain, depending on your design needs */
+  background-position: center;
+  /* to center the image */
+  background-repeat: no-repeat;
+  /* to avoid repeating the image */
+  height: 2320px;
+  width: 100%;
+  /* make sure the section takes up the full height */
+}
+
 .section-container {
   max-width: 1440px;
   padding: 0px 120px;
@@ -309,6 +349,10 @@ a:hover {
 
 }
 
-.mt-100 {
-  margin-top: 100px;
+.pt-185 {
+  padding-top: 185px;
+}
+
+.pt-5rm {
+  padding-top: 5rem;
 }
