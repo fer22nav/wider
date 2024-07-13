@@ -5,116 +5,141 @@ import { Col, Row } from "react-bootstrap";
 export default function Index() {
   return (
     <div className={styles.minWidth}>
-      <div className="background-image-section-1">
-        <section className="d-flex flex-column align-items-center">
+      <section className="background-image-section-1">
+        <div className="section-container pt-5">
           <h1 className="visually-hidden">Home wider accessibility</h1>
-          <h2 className="titulo-xxl color-white mt-5">Hacemos más que <span class="color-lima">accesibilidad</span></h2>
+          <h2 className="titulo-xxl color-white ">Hacemos más que <span class="color-lima">accesibilidad</span></h2>
           <p className='p-xl text-center color-white mt-4 mb-4'>Estrategias escalables para cada cliente.<br /> Experiencias memorables para todas las personas.</p>
           <div className='d-flex justify-content-center w-100'>
             <button className='button-lima p-boton me-2' >Sobre nosotras</button>
             <button className='button-blue p-boton ms-2'>Conocer servicios</button>
           </div>
-        </section>
+        </div>
+        {/* Esto no esta dentro del contenedor */}
         <div className={styles.bgVector1}></div>
-        <section className='d-flex justify-content-center align-items-center'>
-          <Row className="w-100">
-            <Col>
-              <h2 className="titulo-l color-white">Diseño,
+        <div className="section-container">
+          <Row>
+            <Col xs={12} md={6} lg={6} >
+              <h2 className="titulo-l color-white mt-4">Diseño,
                 <span className="color-lima">estrategia,</span><br />
                 <span className="color-lima">innovación</span>  e inclusión.</h2>
               <p className="p-l color-white">Colaboramos con las organizaciones para mejorar procesos,
                 enriquece productos digitales y ampliar el alcance a nuevos mercados.</p>
             </Col>
-            <Col>
+            <Col xs={12} md={6} lg={6} >
               <Image src="/images/wheelchair-guy.svg"
-                width={686}
-                height={477}
+                width={580}
+                height={430}
                 alt="Wider Logo" />
             </Col>
           </Row>
-        </section>
-      </div>
+        </div>
+      </section>
       <section className="background-image-section-2" style={{ paddingTop: '170px' }}>
-        <Row >
-          <Col className="d-flex flex-column justify-content-between" >
-            <h2 className="titulo-l color-blue-text">Un equipo con<br />
-              <span className="color-blue"> experiencia</span> </h2>
-            <Image
-              width={105}
-              height={20}
-              className="mt-2 mb-4"
-              src="/images/line.svg"
-              alt="Descripción de la imagen 1" />
-            <p className="p-l color-grey">Trabajamos en red con especialistas
-              de<br /> diferentes disciplinas para potenciar el valor<br />
-              de los servicios que ofrecemos. </p>
-            <button className="button-blue p-boton" style={{ color: '#070F35' }}>Sobre nosotras</button>
-          </Col>
-          <Col >
-            <div className="d-flex justify-content-around ">
-              <div className="card-container">
-                <Image src="/images/susi-photo.png"
-                  className="card-photo mb-4"
-                  width={224}
-                  height={224}
-                  alt="Wider Logo" />
-                <p className="card-title mb-2">Susana Pallero</p>
-                <p className="card-text">Chief Accessibility Officer.<br /> W3C Invited Expert.<br /> CPWA, WAS, CPACC.</p>
+        <div className="section-container">
+          <Row>
+            <Col xs={12} md={6} lg={5}  >
+              <div className="h-100 d-grid justify-content-between">
+                <h2 className="titulo-l color-blue-text">Un equipo con<br />
+                  <span className="color-blue"> experiencia</span> </h2>
+                <Image
+                  width={105}
+                  height={20}
+                  className="mt-2 mb-4"
+                  src="/images/line.svg"
+                  alt="Descripción de la imagen 1" />
+                <p className="p-l color-grey">Trabajamos en red con especialistas
+                  de<br /> diferentes disciplinas para potenciar <br />el valor
+                  de los servicios que ofrecemos. </p>
+                <button className="button-blue p-boton mt-4" style={{ color: '#070F35' }}>Sobre nosotras</button>
               </div>
-              <div className="card-container">
-                <Image src="/images/pipi-photo.png"
-                  className="card-photo mb-4"
-                  width={224}
-                  height={224}
-                  alt="Wider Logo" />
-                <p className="card-title mb-2">Silvia Marquez</p>
-                <p className="card-text">Diseñadora UX/UI.<br /> Especialista en accesibilidad<br /> digital. CPACC.</p>
+            </Col>
+            <Col xs={12} md={6} lg={7}>
+              <div className="d-flex justify-content-between">
+                <div className="card-container">
+                  <Image src="/images/susi-photo.svg"
+                    className="card-photo mb-4"
+                    width={224}
+                    height={224}
+                    alt="Wider Logo" />
+                  <p className="card-title mb-2">Susana Pallero</p>
+                  <p className="card-text">Chief Accessibility Officer.<br /> W3C Invited Expert.<br /> CPWA, WAS, CPACC.</p>
+                </div>
+                <div className="card-container">
+                  <Image src="/images/pipi-photo.svg"
+                    className="card-photo mb-4"
+                    width={224}
+                    height={224}
+                    alt="Wider Logo" />
+                  <p className="card-title mb-2">Silvia Marquez</p>
+                  <p className="card-text">Diseñadora UX/UI.<br /> Especialista en accesibilidad<br /> digital. CPACC.</p>
+                </div>
               </div>
-            </div>
-          </Col>
-        </Row>
-        <Row >
-          <Col className="" >
-            <Row >
-              <div className="card-container">
-                {/* <Image src="/images/pipi-photo.png"
-                  className=""
-                  width={224}
-                  height={224}
-                  alt="Wider Logo" /> */}
-                <p>Auditoría</p>
-                <p>Auditoría y mejora de productos digitales. </p>
+            </Col>
+          </Row>
+          <div className={styles.bgVector2}></div>
+          <Row className="">
+            <Col xs={12} md={6} lg={3} className="h-100">
+              <div className="card-container-small mb-24">
+                <div className={styles.auitoryIcon}>
+                  <Image src="/images/auditory-icon.svg"
+                    className=""
+                    width={24}
+                    height={29}
+                    alt="Wider Logo" />
+                </div>
+                <p className='p-card-small-title'>Auditoría</p>
+                <p className='p-card-small'>Auditoría y mejora de productos digitales. </p>
               </div>
-              <div className="card-container">
-                <img src="imagen1.jpg" alt="Descripción de la imagen 1" />
-                <p>Estrategia</p>
-                <p>Creación de estrategias y políticas de accesibilidad</p>
+              <div className="card-container-small ">
+                <div className={styles.strategyIcon}>
+                  <Image src="/images/transformation-icon.svg"
+                    className=""
+                    width={29}
+                    height={29}
+                    alt="Wider Logo" />
+                </div>
+                <p className='p-card-small-title '>Transformación</p>
+                <p className='p-card-small'>Orientación en procesos de transformación tecnológica </p>
               </div>
-            </Row>
-          </Col>
-          <Col className="" >
-            <Row >
-              <div className="card-container">
-                <img src="imagen1.jpg" alt="Descripción de la imagen 1" />
-                <p>Transformación</p>
-                <p>Orientación en procesos de transformación tecnológica </p>
+            </Col>
+            <Col xs={12} md={6} lg={3} >
+              <div className="card-container-small mb-24">
+                <div className={styles.strategyIcon}>
+                  <Image src="/images/strategy-icon.svg"
+                    className=""
+                    width={30}
+                    height={30}
+                    alt="Wider Logo" />
+                </div>
+                <p className='p-card-small-title'>Estrategia</p>
+                <p className='p-card-small'>Creación de estrategias y<br />políticas de accesibilidad</p>
               </div>
-              <div className="card-container">
-                <img src="imagen1.jpg" alt="Descripción de la imagen 1" />
-                <p>Legal</p>
-                <p>Reducción del riesgo legal, económico y social.</p>
+              <div className="card-container-small ">
+                <div className={styles.legalIcon}>
+                  <Image src="/images/legal-icon.svg"
+                    className=""
+                    width={34}
+                    height={34}
+                    alt="Wider Logo" />
+                </div>
+                <p className='p-card-small-title'>Legal</p>
+                <p className='p-card-small'>Reducción del riesgo legal, económico y social.</p>
               </div>
-            </Row>
-          </Col>
-          <Col className="" >
-            <h2>Nuestros servicios</h2>
-            <p>Contanos la necesidad de
-              tu empresa y te decimos cómo podemos ayudarte.</p>
-          </Col>
-        </Row>
+            </Col>
+            <Col xs={12} md={6} lg={6} >
+              <div className="d-flex align-items-start flex-column mt-100">
+                {/* <div className="d-flex align-items-center flex-column mt-100"> */}
+                <h2 className="titulo-xl">Nuestros <br />servicios</h2>
+                <p className='p-card-small'>Contanos la necesidad de
+                  tu empresa y te<br /> decimos cómo podemos ayudarte.</p>
+                {/* </div> */}
+              </div>
+            </Col>
+          </Row>
+        </div>
       </section>
       <section>
-
       </section>
 
       <section>

@@ -148,6 +148,24 @@ a:hover {
   line-height: 100%;
 }
 
+.p-card-small-title {
+  color: var(--blue-text);
+  font-family: var(--font-nunito-sans);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%;
+}
+
+.p-card-small {
+  color: var(--gray-text);
+  font-family: var(--font-nunito-sans);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
+
 .p-boton {
   font-family: var(--font-nunito-sans);
   font-size: 20px;
@@ -206,10 +224,9 @@ a:hover {
   box-shadow: -4px 5px 8px 0px rgba(78, 71, 255, 0.10);
   border-radius: 34px;
   background-color: var(--color-white);
-  padding: 32px;
+  padding: 50px 50px;
   display: flex;
   flex-direction: column;
-
 }
 
 .card-title {
@@ -237,6 +254,9 @@ a:hover {
 }
 
 .background-image-section-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: transparent;
   background-image: url('/images/Back-bloque-1.svg');
   background-size: cover;
@@ -245,16 +265,15 @@ a:hover {
   /* to center the image */
   background-repeat: no-repeat;
   /* to avoid repeating the image */
-  height: 1500px;
+  height: 1400px;
   width: 100%;
   /* make sure the section takes up the full height */
 }
 
-.section-w {
-  max-width: 1440px;
-}
-
 .background-image-section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: transparent;
   background-image: url('/images/back-bloque-2.svg');
   background-size: cover;
@@ -266,4 +285,30 @@ a:hover {
   height: 1500px;
   width: 100%;
   /* make sure the section takes up the full height */
+}
+
+.section-container {
+  max-width: 1440px;
+  padding: 0px 120px;
+  /* border: 2px solid red; */
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.card-container-small {
+  box-shadow: -4px 5px 8px 0px rgba(78, 71, 255, 0.10);
+  border-radius: 34px;
+  background-color: var(--color-white);
+  padding: 40px 32px 0 32px;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 100%;
+
+}
+
+.mt-100 {
+  margin-top: 100px;
 }
