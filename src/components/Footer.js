@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from '../styles/footer.module.css';
 
 const Footer = () => {
@@ -5,18 +6,22 @@ const Footer = () => {
     <footer>
       <div className={styles.container}>
         <div>
-          <img src="imagen1.jpg" alt="Logo wider" />
+          <Image src="/images/logo-footer.svg"
+            className=""
+            width={100}
+            height={56}
+            alt="Wider Logo" />
         </div>
         <div>
-          <p>Oficinas</p>
-          <p>EEUU | España | Argentina | Perú | México</p>
-          <a href="#">Copyright 2024</a>
-          <a href="#" >Política de Privacidad</a>
-          <a href="#" >Declaración de Accesibilidad</a>
+          <p className='titulo-footer'>Oficinas</p>
+          <p className='p-footer'>EEUU | España | Argentina | Perú | México</p>
+          <a className='link-footer me-4' href="#">Copyright 2024</a>
+          <a className='link-footer me-4' href="#" >Política de Privacidad</a>
+          <a className='link-footer' href="#" >Declaración de Accesibilidad</a>
         </div>
         <div>
-          <p>Contacto</p>
-          <p>info@wider.global</p>
+          <p className='titulo-footer'>Contacto</p>
+          <p className='p-footer'>info@wider.global</p>
           icon in / icon youtube
         </div>
       </div>

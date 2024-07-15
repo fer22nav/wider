@@ -175,6 +175,37 @@ a:hover {
   line-height: 100%;
 }
 
+.titulo-footer {
+  color: var(--color-white);
+  font-family: var(--font-nunito-sans);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.14px;
+}
+
+.p-footer {
+  color: #F4ECE4;
+  font-family: var(--font-nunito-sans);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.14px;
+}
+
+.link-footer {
+  color: #CACAFC;
+  font-family: var(--font-nunito-sans);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.14px;
+  text-decoration-line: underline;
+}
+
 .numbers-home {
   color: var(--color-lima);
   text-align: center;
