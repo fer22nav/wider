@@ -3,7 +3,7 @@ import styles from '../styles/footer.module.css';
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <div className={styles.container}>
         <div>
           <Image src="/images/logo-footer.svg"
@@ -22,7 +22,17 @@ const Footer = () => {
         <div>
           <p className='titulo-footer'>Contacto</p>
           <p className='p-footer'>info@wider.global</p>
-          icon in / icon youtube
+          <Image src="/images/in-icon.svg"
+            className="me-2"
+            width={24}
+            height={24}
+            alt="Wider Logo" />
+          <Image src="/images/youtube-icon.svg"
+            className=""
+            width={24}
+            height={24}
+            alt="Wider Logo" />
+
         </div>
       </div>
     </footer>

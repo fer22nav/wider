@@ -127,13 +127,11 @@ export default function Index() {
                 <p className='p-card-small'>Reducción del riesgo legal, económico y social.</p>
               </div>
             </Col>
-            <Col xs={12} md={6} lg={6} >
-              <div className="d-flex align-items-start flex-column mt-100">
-                {/* <div className="d-flex align-items-center flex-column mt-100"> */}
+            <Col xs={12} md={6} lg={6} className="d-flex justify-content-center align-items-center">
+              <div className="">
                 <h2 className="titulo-xl">Nuestros <br />servicios</h2>
                 <p className='p-card-small'>Contanos la necesidad de
                   tu empresa y te<br /> decimos cómo podemos ayudarte.</p>
-                {/* </div> */}
               </div>
             </Col>
           </Row>
