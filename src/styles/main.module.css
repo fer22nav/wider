@@ -2,6 +2,32 @@
   max-width: 1440px;
   margin: 0 auto;
 } */
+.firstContainer {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.paragraphContainer {
+  padding: 48px 0px;
+}
+
+.gridContainer {
+  margin-top: 300px;
+  margin-bottom: 300px;
+}
+
+.rightColumn {
+  border-left: 1px solid #F4ECE4;
+  display: flex;
+  padding-left: 42px;
+  /* justify-content: center; */
+  /* Centramos horizontalmente */
+  align-items: center;
+  /* Centramos verticalmente */
+  /* text-align: center; */
+  /* Opcional: Para alinear el texto en el centro */
+
+}
 
 .bgVector1 {
   background: transparent;
