@@ -39,6 +39,7 @@ body {
 /* Estilos para mobile: 600px y menos */
 @media (max-width: 600px) {
   body {
+    margin: 0 auto;
     width: 100%;
   }
 }

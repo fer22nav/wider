@@ -35,21 +35,28 @@ export default function Index() {
             <h2 className="titulo-xl color-white">Nuestra Experiencia</h2>
           </div>
 
-          <ul className="d-flex list-unstyled"> 
-            <Col as="li" xs={12} md={6} lg={4}>
-              <p className="numbers-home">+30</p>
-              <p className="roboto">Países diferentes</p>
-            </Col>
-            <Col as="li" xs={12} md={6} lg={4}>
-              <p className="numbers-home">+200</p>
-              <p className="roboto">Demandas revisadas</p>
-            </Col>
-            <Col as="li" xs={12} md={6} lg={4}>
-              <p className="numbers-home">+10 mil</p>
-              <p className="roboto">Personas capacitadas</p>
-            </Col>
+          <ul className="d-flex list-unstyled flex-wrap justify-content-between"> {/* Flex para responsividad */}
+            <li className="col-xs-12 col-md-6 col-lg-4"> {/* Clases de Bootstrap directamente en `li` */}
+              <div className="text-center">
+                <p className="numbers-home">+30</p>
+                <p className="roboto">Países diferentes</p>
+              </div>
+            </li>
+            <li className="col-xs-12 col-md-6 col-lg-4">
+              <div className="text-center">
+                <p className="numbers-home">+200</p>
+                <p className="roboto">Demandas revisadas</p>
+              </div>
+            </li>
+            <li className="col-xs-12 col-md-6 col-lg-4">
+              <div className="text-center">
+                <p className="numbers-home">+10 mil</p>
+                <p className="roboto">Personas capacitadas</p>
+              </div>
+            </li>
           </ul>
         </Row>
+
       </section>
       <section className="" style={{ paddingTop: '170px' }}>
         <div className="section-container">

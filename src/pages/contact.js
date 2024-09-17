@@ -5,7 +5,7 @@ export default function Contact() {
         <h1>Contáctate con nuestro equipo</h1>
         <p>Escribinos desde cualquier lugar del mundo.
           Tenemos oficinas en EEUU, España, Argentina, Perú y México</p>
-        <img src="imagen1.jpg" alt="Descripción de la imagen 1" />
+
       </div>
       <div>
         <div>

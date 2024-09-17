@@ -76,14 +76,14 @@ export default function Team() {
           <h2>Diseñamos estrategias escalables y entrenamos a
             los equipos para un cambio sostenible.</h2>
           <p>Trabajamos en forma colaborativa con cada cliente para mejorar sus productos, procesos y políticas.</p>
-          <img src="imagen1.jpg" alt="Descripción de la imagen 1" />
+
         </div>
         <div >
           <p>Conocimiento.
             Innovación.
             Co-creación.
             Excelencia.</p>
-          <img src="imagen1.jpg" alt="Descripción de la imagen 1" />
+
         </div>
       </section>
       <section>
@@ -99,7 +99,7 @@ export default function Team() {
             <h3>Nos impulsa el deseo de crecer y ayudar a crecer a más personas</h3>
             <p>Eso nos llevó a generar y compartir conocimiento sobre estos temas: somos autoras de cursos, libros y frameworks. </p>
           </div>
-          <img src="imagen1.jpg" alt="Descripción de la imagen 1" />
+
         </div>
       </section>
     </>
