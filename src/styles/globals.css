@@ -25,115 +25,44 @@
   --background-color: #121133;
 }
 
-/* Aplica estilos globales */
 body {
-  margin: 0;
-  padding: 0;
   background-color: #11153d;
   color: var(--text-color);
-  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
-
-/* Breakpoints */
 
 /* Estilos para mobile: 600px y menos */
 @media (max-width: 600px) {
   body {
+    width: 90%;
+    /* Ancho reducido para permitir márgenes a los lados */
+    max-width: 600px;
+    /* Ancho máximo del body */
     margin: 0 auto;
-    width: 100%;
   }
 }
 
 /* Estilos para tablet: 601px - 1439px */
 @media (min-width: 601px) and (max-width: 1439px) {
   body {
+    width: 90%;
+    /* Ancho del 90% del viewport para dejar margen */
+    max-width: 1200px;
+    /* Máximo ancho del body */
     margin: 0 auto;
+    /* Centrado con márgenes automáticos */
   }
 }
 
 /* Estilos para desktop: 1440px y más */
 @media (min-width: 1440px) {
   body {
+    max-width: 1440px;
+    /* Ancho máximo */
     margin: 0 auto;
-    max-width: 1440px;
+    /* Centrado con márgenes automáticos */
   }
-
-  /* .section-container {
-    max-width: 1440px;
-    padding: 0px 120px;
-
-  } */
-
-  /* background index */
-  /* 
-  .background-image-section-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: transparent;
-    background-image: url('/images/Back-bloque-1.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 1400px;
-    width: 100%;
-  }
-
-  .background-image-section-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: transparent;
-    background-image: url('/images/back-bloque-2.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 1500px;
-    width: 100%;
-
-  }
-
-  .background-image-section-3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #121133;
-    background-image: url('/images/back-bloque-3.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 2320px;
-    width: 100%;
-  }
-
-
-  .background-image-section-team-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: transparent;
-    background-image: url('/images/back-team-1.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 1400px;
-    width: 100%;
-  }
-
-  .background-image-section-team-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: transparent;
-    background-image: url('/images/back-team-2.svg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 790px;
-    width: 100%;
-  }
-
-  */
 }
 
 h1, h2, h3, h4, h5, h6 {
