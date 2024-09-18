@@ -6,32 +6,23 @@ const LanguageSwitcher = () => {
   const router = useRouter();
   const { locale } = router;
 
-  // Función para cambiar el idioma
-  const switchLanguage = (newLocale) => {
+  // Función para alternar entre los idiomas
+  const toggleLanguage = () => {
+    const newLocale = locale === 'es' ? 'en' : 'es';
     const { pathname, asPath, query } = router;
     router.push({ pathname, query }, asPath, { locale: newLocale });
   };
 
   return (
-    <div className={styles.languageSwitcher} aria-label="Change language">
-      <button
-        className={locale === 'es' ? styles.active : ''}
-        onClick={() => switchLanguage('es')}
-        aria-current={locale === 'es' ? 'true' : 'false'}
-        aria-label="Cambiar a Español"
-      >
-        ESPAÑOL
-      </button>
-      <span className={styles.limaColor}>/</span>
-      <button
-        className={locale === 'en' ? styles.active : ''}
-        onClick={() => switchLanguage('en')}
-        aria-current={locale === 'en' ? 'true' : 'false'}
-        aria-label="Switch to English"
-      >
-        ENGLISH
-      </button>
-    </div>
+    <button
+      onClick={toggleLanguage}
+      className={styles.languageSwitcher}
+      aria-label={locale === 'es' ? 'Cambiar a Inglés' : 'Switch to Spanish'}
+    >
+      <span className={locale === 'es' ? styles.active : ''}>ESPAÑOL</span>
+      <span className={styles.separator}> / </span>
+      <span className={locale === 'en' ? styles.active : ''}>ENGLISH</span>
+    </button>
   );
 };
 

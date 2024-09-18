@@ -1,32 +1,23 @@
-/* styles/languageSwitcher.module.css */
 .languageSwitcher {
-  display: flex;
-  align-items: center;
-  font-family: 'Arial', sans-serif;
-  margin-right: 30px;
-}
-
-.languageSwitcher button {
   background: none;
   border: none;
-  font-size: 1rem;
   cursor: pointer;
-  color: #b5b5b5;
-  transition: color 0.3s ease;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  color: white;
 }
 
-.languageSwitcher button:hover,
-.languageSwitcher button:focus, .limaColor {
-  color: #c3ff4d;
-  /* Color para el hover */
+.separator {
+  margin: 0 8px;
+  color: var(--color-lima);
 }
 
-.languageSwitcher .active {
-  color: #c3ff4d;
-  /* Color cuando está activo */
+.active {
+  color: var(--color-lima);
 }
 
-/* .languageSwitcher span {
-  margin: 0 0.5rem;
-  color: #b5b5b5;
+/* button:focus {
+  outline: 2px solid var(--color-lima);
+
 } */
