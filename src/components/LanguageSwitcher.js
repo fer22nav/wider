@@ -6,7 +6,6 @@ const LanguageSwitcher = () => {
   const router = useRouter();
   const { locale } = router;
 
-  // Función para alternar entre los idiomas
   const toggleLanguage = () => {
     const newLocale = locale === 'es' ? 'en' : 'es';
     const { pathname, asPath, query } = router;

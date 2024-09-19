@@ -8,7 +8,7 @@ export default function Index() {
       <section>
         <div className={styles.firstContainer}>
 
-          <h1 className="visually-hidden">Home wider accessibility</h1>
+          <h1 className="opacity-0">Home wider accessibility</h1>
           <h2 className="titulo-xxl color-white ">Hacemos más que<br /> accesibilidad</h2>
           {/* <div className={styles.bgVector1}></div> */}
           <div className={styles.paragraphContainer}>
@@ -35,20 +35,20 @@ export default function Index() {
             <h2 className="titulo-xl color-white">Nuestra Experiencia</h2>
           </div>
 
-          <ul className="d-flex list-unstyled flex-wrap justify-content-between"> {/* Flex para responsividad */}
-            <li className="col-xs-12 col-md-6 col-lg-4"> {/* Clases de Bootstrap directamente en `li` */}
+          <ul className="d-flex list-unstyled flex-wrap justify-content-between">
+            <li className="col-xs-12 col-md-12 col-lg-4">
               <div className="text-center">
                 <p className="numbers-home">+30</p>
                 <p className="roboto">Países diferentes</p>
               </div>
             </li>
-            <li className="col-xs-12 col-md-6 col-lg-4">
+            <li className="col-xs-12 col-md-12 col-lg-4">
               <div className="text-center">
                 <p className="numbers-home">+200</p>
                 <p className="roboto">Demandas revisadas</p>
               </div>
             </li>
-            <li className="col-xs-12 col-md-6 col-lg-4">
+            <li className="col-xs-12 col-md-12 col-lg-4">
               <div className="text-center">
                 <p className="numbers-home">+10 mil</p>
                 <p className="roboto">Personas capacitadas</p>
@@ -58,107 +58,189 @@ export default function Index() {
         </Row>
 
       </section>
-      <section className="" style={{ paddingTop: '170px' }}>
-        <div className="section-container">
-          <Row>
-            <Col xs={12} md={6} lg={5}  >
-              <div className="h-100 d-grid justify-content-between">
-                <h2 className="titulo-l color-blue-text">Un equipo con<br />
-                  <span className="color-blue"> experiencia</span> </h2>
-                <Image
-                  width={105}
-                  height={20}
-                  className="mt-2 mb-4"
-                  src="/images/line-1.svg"
-                  alt="Descripción de la imagen 1" />
-                <p className="p-l color-grey">Trabajamos en red con especialistas
-                  de<br /> diferentes disciplinas para potenciar <br />el valor
-                  de los servicios que ofrecemos. </p>
-                <button className="button-blue p-boton mt-4" style={{ color: '#070F35' }}>Sobre nosotras</button>
+      <section className="" >
+        <h2 className="titulo-l color-white text-lg-start mb-4">Algunos de<br /> nuestros<br />
+          <span className="color-lima"> clientes</span> </h2>
+
+        <ul className="row list-unstyled">
+          <li className="col-12 col-md-6 col-lg-4 mb-4">
+            <div
+              style={{ backgroundColor: '#ff7f50', width: '100%', height: '80px' }}
+              className="d-flex justify-content-center align-items-center"
+            >
+              Smartecarte
+            </div>
+          </li>
+
+          <li className="col-12 col-md-6 col-lg-4 mb-4">
+            <div
+              style={{ backgroundColor: '#4682b4', width: '100%', height: '80px' }}
+              className="d-flex justify-content-center align-items-center"
+            >
+              Volvo
+            </div>
+          </li>
+
+          <li className="col-12 col-md-6 col-lg-4 mb-4">
+            <div
+              style={{ backgroundColor: '#32cd32', width: '100%', height: '80px' }}
+              className="d-flex justify-content-center align-items-center"
+            >
+              BID
+            </div>
+          </li>
+          <li className="col-12 col-md-6 col-lg-4 mb-4">
+            <div
+              style={{ backgroundColor: '#ff4500', width: '100%', height: '80px' }}
+              className="d-flex justify-content-center align-items-center"
+            >
+              Modo
+            </div>
+          </li>
+          <li className="col-12 col-md-6 col-lg-4 mb-4">
+            <div
+              style={{ backgroundColor: '#1e90ff', width: '100%', height: '80px' }}
+              className="d-flex justify-content-center align-items-center"
+            >
+              Universidad de Barcelona
+            </div>
+          </li>
+          <li className="col-12 col-md-6 col-lg-4 mb-4">
+            <div
+              style={{ backgroundColor: '#ff69b4', width: '100%', height: '80px' }}
+              className="d-flex justify-content-center align-items-center"
+            >
+              R/GA
+            </div>
+          </li>
+
+          <li className="col-12 col-md-6 col-lg-4 mb-4">
+            <div
+              style={{ backgroundColor: '#8a2be2', width: '100%', height: '80px' }}
+              className="d-flex justify-content-center align-items-center"
+            >
+              SKY
+            </div>
+          </li>
+
+          <li className="col-12 col-md-6 col-lg-4 mb-4">
+            <div
+              style={{ backgroundColor: '#ff6347', width: '100%', height: '80px' }}
+              className="d-flex justify-content-center align-items-center"
+            >
+              BCP
+            </div>
+          </li>
+
+          <li className="col-12 col-md-6 col-lg-4 mb-4">
+            <div
+              style={{ backgroundColor: '#daa520', width: '100%', height: '80px' }}
+              className="d-flex justify-content-center align-items-center"
+            >
+              ITX
+            </div>
+          </li>
+        </ul>
+
+        {/* <Row>
+          <Col xs={12} md={6} lg={5}  >
+            <div className="h-100 d-grid justify-content-between">
+              <h2 className="titulo-l color-white">Algunos de nuestros <br />
+                <span className="color-lima"> clientes</span> </h2>
+              <Image
+                width={105}
+                height={20}
+                className="mt-2 mb-4"
+                src="/images/line-1.svg"
+                alt="Descripción de la imagen 1" />
+              <p className="p-l color-grey">Trabajamos en red con especialistas
+                de<br /> diferentes disciplinas para potenciar <br />el valor
+                de los servicios que ofrecemos. </p>
+              <button className="button-blue p-boton mt-4" style={{ color: '#070F35' }}>Sobre nosotras</button>
+            </div>
+          </Col>
+          <Col xs={12} md={6} lg={7}>
+            <div className="d-flex justify-content-between">
+              <div className="card-container">
+                <Image src="/images/susi-photo.svg"
+                  className="card-photo mb-4"
+                  width={224}
+                  height={224}
+                  alt="Wider Logo" />
+                <p className="card-title mb-2">Susana Pallero</p>
+                <p className="card-text">Chief Accessibility Officer.<br /> W3C Invited Expert.<br /> CPWA, WAS, CPACC.</p>
               </div>
-            </Col>
-            <Col xs={12} md={6} lg={7}>
-              <div className="d-flex justify-content-between">
-                <div className="card-container">
-                  <Image src="/images/susi-photo.svg"
-                    className="card-photo mb-4"
-                    width={224}
-                    height={224}
-                    alt="Wider Logo" />
-                  <p className="card-title mb-2">Susana Pallero</p>
-                  <p className="card-text">Chief Accessibility Officer.<br /> W3C Invited Expert.<br /> CPWA, WAS, CPACC.</p>
-                </div>
-                <div className="card-container">
-                  <Image src="/images/pipi-photo.svg"
-                    className="card-photo mb-4"
-                    width={224}
-                    height={224}
-                    alt="Wider Logo" />
-                  <p className="card-title mb-2">Silvia Marquez</p>
-                  <p className="card-text">Diseñadora UX/UI.<br /> Especialista en accesibilidad<br /> digital. CPACC.</p>
-                </div>
+              <div className="card-container">
+                <Image src="/images/pipi-photo.svg"
+                  className="card-photo mb-4"
+                  width={224}
+                  height={224}
+                  alt="Wider Logo" />
+                <p className="card-title mb-2">Silvia Marquez</p>
+                <p className="card-text">Diseñadora UX/UI.<br /> Especialista en accesibilidad<br /> digital. CPACC.</p>
               </div>
-            </Col>
-          </Row>
-          <div className={styles.bgVector2}></div>
-          <Row className="">
-            <Col xs={12} md={6} lg={3} className="h-100">
-              <div className="card-container-small mb-24">
-                <div className={styles.auitoryIcon}>
-                  <Image src="/images/auditory-icon.svg"
-                    className=""
-                    width={24}
-                    height={29}
-                    alt="Wider Logo" />
-                </div>
-                <p className='p-card-small-title'>Auditoría</p>
-                <p className='p-card-small'>Auditoría y mejora de productos digitales. </p>
+            </div>
+          </Col>
+        </Row> */}
+        <div className={styles.bgVector2}></div>
+        <Row className="">
+          <Col xs={12} md={6} lg={3} className="h-100">
+            <div className="card-container-small mb-24">
+              <div className={styles.auitoryIcon}>
+                <Image src="/images/auditory-icon.svg"
+                  className=""
+                  width={24}
+                  height={29}
+                  alt="Wider Logo" />
               </div>
-              <div className="card-container-small ">
-                <div className={styles.strategyIcon}>
-                  <Image src="/images/transformation-icon.svg"
-                    className=""
-                    width={29}
-                    height={29}
-                    alt="Wider Logo" />
-                </div>
-                <p className='p-card-small-title '>Transformación</p>
-                <p className='p-card-small'>Orientación en procesos de transformación tecnológica </p>
+              <p className='p-card-small-title'>Auditoría</p>
+              <p className='p-card-small'>Auditoría y mejora de productos digitales. </p>
+            </div>
+            <div className="card-container-small ">
+              <div className={styles.strategyIcon}>
+                <Image src="/images/transformation-icon.svg"
+                  className=""
+                  width={29}
+                  height={29}
+                  alt="Wider Logo" />
               </div>
-            </Col>
-            <Col xs={12} md={6} lg={3} >
-              <div className="card-container-small mb-24">
-                <div className={styles.strategyIcon}>
-                  <Image src="/images/strategy-icon.svg"
-                    className=""
-                    width={30}
-                    height={30}
-                    alt="Wider Logo" />
-                </div>
-                <p className='p-card-small-title'>Estrategia</p>
-                <p className='p-card-small'>Creación de estrategias y<br />políticas de accesibilidad</p>
+              <p className='p-card-small-title '>Transformación</p>
+              <p className='p-card-small'>Orientación en procesos de transformación tecnológica </p>
+            </div>
+          </Col>
+          <Col xs={12} md={6} lg={3} >
+            <div className="card-container-small mb-24">
+              <div className={styles.strategyIcon}>
+                <Image src="/images/strategy-icon.svg"
+                  className=""
+                  width={30}
+                  height={30}
+                  alt="Wider Logo" />
               </div>
-              <div className="card-container-small ">
-                <div className={styles.legalIcon}>
-                  <Image src="/images/legal-icon.svg"
-                    className=""
-                    width={34}
-                    height={34}
-                    alt="Wider Logo" />
-                </div>
-                <p className='p-card-small-title'>Legal</p>
-                <p className='p-card-small'>Reducción del riesgo legal, económico y social.</p>
+              <p className='p-card-small-title'>Estrategia</p>
+              <p className='p-card-small'>Creación de estrategias y<br />políticas de accesibilidad</p>
+            </div>
+            <div className="card-container-small ">
+              <div className={styles.legalIcon}>
+                <Image src="/images/legal-icon.svg"
+                  className=""
+                  width={34}
+                  height={34}
+                  alt="Wider Logo" />
               </div>
-            </Col>
-            <Col xs={12} md={6} lg={6} className="d-flex justify-content-center align-items-center">
-              <div className="">
-                <h2 className="titulo-xl">Nuestros <br />servicios</h2>
-                <p className='p-card-small'>Contanos la necesidad de
-                  tu empresa y te<br /> decimos cómo podemos ayudarte.</p>
-              </div>
-            </Col>
-          </Row>
-        </div>
+              <p className='p-card-small-title'>Legal</p>
+              <p className='p-card-small'>Reducción del riesgo legal, económico y social.</p>
+            </div>
+          </Col>
+          <Col xs={12} md={6} lg={6} className="d-flex justify-content-center align-items-center">
+            <div className="">
+              <h2 className="titulo-xl">Nuestros <br />servicios</h2>
+              <p className='p-card-small'>Contanos la necesidad de
+                tu empresa y te<br /> decimos cómo podemos ayudarte.</p>
+            </div>
+          </Col>
+        </Row>
+
       </section>
       <section className="background-image-section-3 pt-185">
         {/* <div className="section-container">
