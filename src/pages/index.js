@@ -30,7 +30,7 @@ export default function Index() {
         </Row>
       </section>
       <section className="" >
-        <Row className="">
+        <Row className={styles.gridContainer}>
           <div className="d-flex justify-content-center">
             <h2 className="titulo-xl color-white">Nuestra Experiencia</h2>
           </div>
@@ -58,7 +58,7 @@ export default function Index() {
         </Row>
 
       </section>
-      <section className="mt-5 mb-5" >
+      <section >
         <div className="row">
           <div className="col-12 col-md-12 col-lg-4 ">
             <h2 className="titulo-l color-white mb-4">
@@ -145,6 +145,14 @@ export default function Index() {
           </div>
         </div>
       </section>
+      <Row className={styles.gridContainer}>
+        <Col xs={12} md={6} lg={6} >
+          <h2 className="titulo-l color-white mb-0">Solo trabajamos <br />con <span className="color-lima">expertos</span></h2>
+        </Col>
+        <Col xs={12} md={6} lg={6} >
+          <p className="p-m color-white mb-0">Todos nuestros profesionales tienen al menos<br /> 4 años de experiencia en accesibilidad y están <br />certificados internacionalmente a través de la<br /> Asociación Internacional de Profesionales de<br /> Accesibilidad (IAAP).</p>
+        </Col>
+      </Row>
       {/* <Row>
           <Col xs={12} md={6} lg={5}  >
             <div className="h-100 d-grid justify-content-between">
@@ -186,7 +194,7 @@ export default function Index() {
           </Col>
         </Row> */}
 
-      <Row className="">
+      {/* <Row className="">
         <Col xs={12} md={6} lg={3} className="h-100">
           <div className="card-container-small mb-24">
             <div className={styles.auitoryIcon}>
@@ -242,7 +250,7 @@ export default function Index() {
               tu empresa y te<br /> decimos cómo podemos ayudarte.</p>
           </div>
         </Col>
-      </Row>
+      </Row> */}
 
 
       <section className="background-image-section-3 pt-185">
@@ -268,7 +276,7 @@ export default function Index() {
           </Row>
 
         </div> */}
-        <div className={styles.bgVector3}></div>
+        {/* <div className={styles.bgVector3}></div>
         <div className="section-container">
           <Row className="">
             <Col xs={12} md={6} lg={5} >
@@ -290,8 +298,8 @@ export default function Index() {
                   alt="Descripción de la imagen 1" />
                 <button className="button-lima color-white">Contactanos</button></div>
             </Col>
-          </Row>
-        </div >
+          </Row> 
+        </div >*/}
       </section>
     </div >
   );
