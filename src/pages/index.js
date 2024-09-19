@@ -4,7 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 export default function Index() {
   return (
-    <div className={styles.minWidth}>
+    <div >
       <section>
         <div className={styles.firstContainer}>
 
@@ -58,91 +58,94 @@ export default function Index() {
         </Row>
 
       </section>
-      <section className="" >
-        <h2 className="titulo-l color-white text-lg-start mb-4">Algunos de<br /> nuestros<br />
-          <span className="color-lima"> clientes</span> </h2>
+      <section className="mt-5 mb-5" >
+        <div className="row">
+          <div className="col-12 col-md-12 col-lg-4 ">
+            <h2 className="titulo-l color-white mb-4">
+              Algunos de<br /> nuestros<br />
+              <span className="color-lima">clientes</span>
+            </h2>
+          </div>
+          <div className="col-12 col-md-12 col-lg-8">
+            <ul className="row list-unstyled">
+              <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
+                <Image
+                  width={150}
+                  height={80}
+                  src="/images/smartecarte.svg"
+                  alt="smartecarte"
+                />
+              </li>
+              <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
+                <Image
+                  width={300}
+                  height={80}
+                  src="/images/volvo.svg"
+                  alt="volvo"
+                />
+              </li>
+              <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
+                <Image
+                  width={150}
+                  height={80}
+                  src="/images/bid.svg"
+                  alt="bid"
+                />
+              </li>
+              <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
+                <Image
+                  width={150}
+                  height={80}
+                  src="/images/modo.svg"
+                  alt="modo"
+                />
+              </li>
+              <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
+                <Image
+                  width={150}
+                  height={80}
+                  src="/images/rga.svg"
+                  alt="rga"
+                />
+              </li>
+              <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
+                <Image
+                  width={150}
+                  height={80}
+                  src="/images/sky.svg"
+                  alt="sky"
+                />
+              </li>
+              <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
+                <Image
+                  width={150}
+                  height={80}
+                  src="/images/unibarcelona.svg"
+                  alt="unibarcelona"
+                />
+              </li>
+              <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
+                <Image
+                  width={150}
+                  height={80}
+                  src="/images/bcp.svg"
+                  alt="bcp"
+                />
+              </li>
+              <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
+                <Image
+                  width={80}
+                  height={80}
+                  src="/images/itx.svg"
+                  alt="ITX"
+                />
+              </li>
+            </ul>
 
-        <ul className="row list-unstyled">
-          <li className="col-12 col-md-6 col-lg-4 mb-4">
-            <div
-              style={{ backgroundColor: '#ff7f50', width: '100%', height: '80px' }}
-              className="d-flex justify-content-center align-items-center"
-            >
-              Smartecarte
-            </div>
-          </li>
-
-          <li className="col-12 col-md-6 col-lg-4 mb-4">
-            <div
-              style={{ backgroundColor: '#4682b4', width: '100%', height: '80px' }}
-              className="d-flex justify-content-center align-items-center"
-            >
-              Volvo
-            </div>
-          </li>
-
-          <li className="col-12 col-md-6 col-lg-4 mb-4">
-            <div
-              style={{ backgroundColor: '#32cd32', width: '100%', height: '80px' }}
-              className="d-flex justify-content-center align-items-center"
-            >
-              BID
-            </div>
-          </li>
-          <li className="col-12 col-md-6 col-lg-4 mb-4">
-            <div
-              style={{ backgroundColor: '#ff4500', width: '100%', height: '80px' }}
-              className="d-flex justify-content-center align-items-center"
-            >
-              Modo
-            </div>
-          </li>
-          <li className="col-12 col-md-6 col-lg-4 mb-4">
-            <div
-              style={{ backgroundColor: '#1e90ff', width: '100%', height: '80px' }}
-              className="d-flex justify-content-center align-items-center"
-            >
-              Universidad de Barcelona
-            </div>
-          </li>
-          <li className="col-12 col-md-6 col-lg-4 mb-4">
-            <div
-              style={{ backgroundColor: '#ff69b4', width: '100%', height: '80px' }}
-              className="d-flex justify-content-center align-items-center"
-            >
-              R/GA
-            </div>
-          </li>
-
-          <li className="col-12 col-md-6 col-lg-4 mb-4">
-            <div
-              style={{ backgroundColor: '#8a2be2', width: '100%', height: '80px' }}
-              className="d-flex justify-content-center align-items-center"
-            >
-              SKY
-            </div>
-          </li>
-
-          <li className="col-12 col-md-6 col-lg-4 mb-4">
-            <div
-              style={{ backgroundColor: '#ff6347', width: '100%', height: '80px' }}
-              className="d-flex justify-content-center align-items-center"
-            >
-              BCP
-            </div>
-          </li>
-
-          <li className="col-12 col-md-6 col-lg-4 mb-4">
-            <div
-              style={{ backgroundColor: '#daa520', width: '100%', height: '80px' }}
-              className="d-flex justify-content-center align-items-center"
-            >
-              ITX
-            </div>
-          </li>
-        </ul>
-
-        {/* <Row>
+          </div>
+        </div>
+      </section>
+      {/* <Row>
           <Col xs={12} md={6} lg={5}  >
             <div className="h-100 d-grid justify-content-between">
               <h2 className="titulo-l color-white">Algunos de nuestros <br />
@@ -182,66 +185,66 @@ export default function Index() {
             </div>
           </Col>
         </Row> */}
-        <div className={styles.bgVector2}></div>
-        <Row className="">
-          <Col xs={12} md={6} lg={3} className="h-100">
-            <div className="card-container-small mb-24">
-              <div className={styles.auitoryIcon}>
-                <Image src="/images/auditory-icon.svg"
-                  className=""
-                  width={24}
-                  height={29}
-                  alt="Wider Logo" />
-              </div>
-              <p className='p-card-small-title'>Auditoría</p>
-              <p className='p-card-small'>Auditoría y mejora de productos digitales. </p>
-            </div>
-            <div className="card-container-small ">
-              <div className={styles.strategyIcon}>
-                <Image src="/images/transformation-icon.svg"
-                  className=""
-                  width={29}
-                  height={29}
-                  alt="Wider Logo" />
-              </div>
-              <p className='p-card-small-title '>Transformación</p>
-              <p className='p-card-small'>Orientación en procesos de transformación tecnológica </p>
-            </div>
-          </Col>
-          <Col xs={12} md={6} lg={3} >
-            <div className="card-container-small mb-24">
-              <div className={styles.strategyIcon}>
-                <Image src="/images/strategy-icon.svg"
-                  className=""
-                  width={30}
-                  height={30}
-                  alt="Wider Logo" />
-              </div>
-              <p className='p-card-small-title'>Estrategia</p>
-              <p className='p-card-small'>Creación de estrategias y<br />políticas de accesibilidad</p>
-            </div>
-            <div className="card-container-small ">
-              <div className={styles.legalIcon}>
-                <Image src="/images/legal-icon.svg"
-                  className=""
-                  width={34}
-                  height={34}
-                  alt="Wider Logo" />
-              </div>
-              <p className='p-card-small-title'>Legal</p>
-              <p className='p-card-small'>Reducción del riesgo legal, económico y social.</p>
-            </div>
-          </Col>
-          <Col xs={12} md={6} lg={6} className="d-flex justify-content-center align-items-center">
-            <div className="">
-              <h2 className="titulo-xl">Nuestros <br />servicios</h2>
-              <p className='p-card-small'>Contanos la necesidad de
-                tu empresa y te<br /> decimos cómo podemos ayudarte.</p>
-            </div>
-          </Col>
-        </Row>
 
-      </section>
+      <Row className="">
+        <Col xs={12} md={6} lg={3} className="h-100">
+          <div className="card-container-small mb-24">
+            <div className={styles.auitoryIcon}>
+              <Image src="/images/auditory-icon.svg"
+                className=""
+                width={24}
+                height={29}
+                alt="Wider Logo" />
+            </div>
+            <p className='p-card-small-title'>Auditoría</p>
+            <p className='p-card-small'>Auditoría y mejora de productos digitales. </p>
+          </div>
+          <div className="card-container-small ">
+            <div className={styles.strategyIcon}>
+              <Image src="/images/transformation-icon.svg"
+                className=""
+                width={29}
+                height={29}
+                alt="Wider Logo" />
+            </div>
+            <p className='p-card-small-title '>Transformación</p>
+            <p className='p-card-small'>Orientación en procesos de transformación tecnológica </p>
+          </div>
+        </Col>
+        <Col xs={12} md={6} lg={3} >
+          <div className="card-container-small mb-24">
+            <div className={styles.strategyIcon}>
+              <Image src="/images/strategy-icon.svg"
+                className=""
+                width={30}
+                height={30}
+                alt="Wider Logo" />
+            </div>
+            <p className='p-card-small-title'>Estrategia</p>
+            <p className='p-card-small'>Creación de estrategias y<br />políticas de accesibilidad</p>
+          </div>
+          <div className="card-container-small ">
+            <div className={styles.legalIcon}>
+              <Image src="/images/legal-icon.svg"
+                className=""
+                width={34}
+                height={34}
+                alt="Wider Logo" />
+            </div>
+            <p className='p-card-small-title'>Legal</p>
+            <p className='p-card-small'>Reducción del riesgo legal, económico y social.</p>
+          </div>
+        </Col>
+        <Col xs={12} md={6} lg={6} className="d-flex justify-content-center align-items-center">
+          <div className="">
+            <h2 className="titulo-xl">Nuestros <br />servicios</h2>
+            <p className='p-card-small'>Contanos la necesidad de
+              tu empresa y te<br /> decimos cómo podemos ayudarte.</p>
+          </div>
+        </Col>
+      </Row>
+
+
       <section className="background-image-section-3 pt-185">
         {/* <div className="section-container">
           <Row className="">
