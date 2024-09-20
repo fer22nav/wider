@@ -12,8 +12,7 @@ export default function Maintenance() {
           alt="Wider Logo"
         />
       </div>
-      <h2 className="titulo-xxl color-white">Proximamente</h2>
+      <h2 className="titulo-xxl color-white">Próximamente</h2>
     </div>
-
   );
 }

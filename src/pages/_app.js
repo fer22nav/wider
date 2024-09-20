@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
     return (
       <>
         <Head>
-          <title>Proximamente - Wider</title>
+          <title>Próximamente - Wider</title>
           <meta name="description" content="Nuestro sitio está en construccion. Vuelve pronto." />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
