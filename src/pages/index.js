@@ -160,15 +160,14 @@ export default function Index() {
         </Col>
       </Row>
 
-      <Row className="">
+      <ul className="row list-unstyled">
         {/* Tarjeta 1 */}
-        <Col xs={12} md={6} lg={3} >
+        <li className="col-xs-12 col-md-6 col-lg-3 mb-4 d-flex">
           <div className="card-container-small">
             <div className="d-flex">
               <div className={styles.legalIcon}>
                 <Image
                   src="/images/legal-team-icon.svg"
-                  className=""
                   width={33}
                   height={33}
                   alt="Wider Logo"
@@ -178,16 +177,15 @@ export default function Index() {
             </div>
             <p className="p-card-small">Contamos con abogados y expertos en cumplimiento de distintas partes del mundo, que en muchos casos han sido co-autores y asesores expertos de leyes y estándares.</p>
           </div>
-        </Col>
+        </li>
 
         {/* Tarjeta 2 */}
-        <Col xs={12} md={6} lg={3} >
+        <li className="col-xs-12 col-md-6 col-lg-3 mb-4 d-flex">
           <div className="card-container-small">
             <div className="d-flex">
               <div className={styles.legalIcon}>
                 <Image
                   src="/images/testing-icon.svg"
-                  className=""
                   width={33}
                   height={33}
                   alt="Wider Logo"
@@ -197,16 +195,15 @@ export default function Index() {
             </div>
             <p className="p-card-small">Contamos con expertos en pruebas de accesibilidad que diagnostican y miden el cumplimiento de los estándares de accesibilidad. Registran los errores y documentan formas de remediación para que puedan ser solucionados por los equipos de desarrollo.</p>
           </div>
-        </Col>
+        </li>
 
         {/* Tarjeta 3 */}
-        <Col xs={12} md={6} lg={3}>
-          <div className="card-container-small ">
+        <li className="col-xs-12 col-md-6 col-lg-3 mb-4 d-flex">
+          <div className="card-container-small">
             <div className="d-flex">
               <div className={styles.strategyIcon}>
                 <Image
                   src="/images/transformation-icon.svg"
-                  className=""
                   width={24}
                   height={24}
                   alt="Wider Logo"
@@ -214,33 +211,28 @@ export default function Index() {
               </div>
               <p className="p-card-small-title">Consultores de<br /> accesibilidad</p>
             </div>
-            <p className="p-card-small">
-              Contamos con expertos en crear estrategias para que tus productos sean y se mantengan accesibles para todas las personas cumpliendo  los estándares según tu industria de principio a fin.
-            </p>
+            <p className="p-card-small">Contamos con expertos en crear estrategias para que tus productos sean y se mantengan accesibles para todas las personas cumpliendo los estándares según tu industria de principio a fin.</p>
           </div>
-        </Col>
+        </li>
+
         {/* Tarjeta 4 */}
-        <Col xs={12} md={6} lg={3}>
+        <li className="col-xs-12 col-md-6 col-lg-3 mb-4 d-flex">
           <div className="card-container-small">
             <div className="d-flex">
               <div className={styles.uxuiIcon}>
                 <Image
                   src="/images/uxui-icon.svg"
-                  className=""
                   width={33}
                   height={33}
                   alt="Wider Logo"
                 />
               </div>
-              <p className="p-card-small-title">Diseñadores<br />
-                UX/UI </p>
+              <p className="p-card-small-title">Diseñadores<br /> UX/UI </p>
             </div>
-            <p className="p-card-small">
-              Contamos con diseñadores UX/UI especializados en crear experiencias digitales atractivas, fáciles de usar y accesibles. Además revisan y dan recomendaciones de remediación para diseños y sistemas de diseño.
-            </p>
+            <p className="p-card-small">Contamos con diseñadores UX/UI especializados en crear experiencias digitales atractivas, fáciles de usar y accesibles. Además revisan y dan recomendaciones de remediación para diseños y sistemas de diseño.</p>
           </div>
-        </Col>
-      </Row>
+        </li>
+      </ul>
       {/* <div className={styles.bgVector3}></div> */}
 
 
