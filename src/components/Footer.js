@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import styles from '../styles/footer.module.css';
 import { Col, Row } from 'react-bootstrap';
+import Link from 'next/link';
 
 const Footer = () => {
   //hacerlo responsive 
@@ -18,8 +19,13 @@ const Footer = () => {
           <p className='titulo-footer'>Oficinas</p>
           <p className='p-footer'>EEUU | España | Argentina | Perú | México</p>
           <p className='p-xs color-white ' >Copyright 2024</p>
-          <a className='link-footer me-4 d-block d-md-inline mb-2 mb-md-0' href="/PrivacyPolicy">Política de Privacidad</a>
-          <a className='link-footer d-block d-md-inline' href="/AccessibilityStatement">Declaración de Accesibilidad</a>
+          <Link href="/PrivacyPolicy" className='link-footer me-4 d-block d-md-inline mb-2 mb-md-0'>
+            Política de Privacidad
+          </Link>
+
+          <Link href="/AccessibilityStatement" className='link-footer d-block d-md-inline'>
+            Declaración de Accesibilidad
+          </Link>
         </Col>
         <Col xs={12} md={4} lg={4} className='mb-4'>
           <p className='titulo-footer'>Contacto</p>
