@@ -180,7 +180,7 @@ a:hover {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 100%;
+  /* line-height: 100%; */
 }
 
 .p-card-small-title {
@@ -478,4 +478,31 @@ a:hover {
 
 .mb-50 {
   margin-bottom: 50px;
+}
+
+.update-privacy-policy {
+  color: var(--color-lima);
+  font-family: var(--font-nunito-sans);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.h2-privacy-policy {
+  color: var(--color-white);
+  font-family: var(--font-nunito-sans);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.h3-privacy-policy {
+  color: var(--color-white);
+  font-family: var(--font-nunito-sans);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }

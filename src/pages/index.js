@@ -4,7 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 export default function Index() {
   return (
-    <>
+    <div>
       <section>
         <div className={styles.firstContainer}>
 
@@ -116,7 +116,7 @@ export default function Index() {
               </li>
               <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
                 <Image
-                  width={150}
+                  width={120}
                   height={80}
                   src="/images/sky.svg"
                   alt="sky"
@@ -239,6 +239,6 @@ export default function Index() {
         <h2 className="p-xl color-white mb-0 text-center">Si querés saber más, solicita una cita con nuestros  <br /> profesionales en
           <span className="color-lima"> info@wider.global</span></h2>
       </section>
-    </ >
+    </div >
   );
 }
