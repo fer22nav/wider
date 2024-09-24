@@ -15,4 +15,5 @@
 
 .active {
   color: var(--color-lima);
+  font-weight: bold;
 }

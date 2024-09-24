@@ -4,7 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 export default function Index() {
   return (
-    <div>
+    <>
       <section>
         <div className={styles.firstContainer}>
 
@@ -17,13 +17,13 @@ export default function Index() {
           </div>
           <Row >
             <Col xs={12} md={12} lg={2} >
-              <a href="tu-enlace-aqui" className='button-lima p-boton d-inline-flex text-decoration-none'>
+              <a href="#contact-section" className='button-lima p-boton d-inline-flex text-decoration-none'>
                 Contáctanos
               </a>
             </Col>
-            <Col xs={12} md={12} lg={10} >
+            {/* <Col xs={12} md={12} lg={10} >
               <button className='button-blue p-boton'>Descargar brochure de servicios</button>
-            </Col>
+            </Col> */}
           </Row>
         </div>
         <Row className={styles.gridContainer}>
@@ -41,20 +41,20 @@ export default function Index() {
             <h2 className="titulo-xl color-white">Nuestra Experiencia</h2>
           </div>
 
-          <ul className="d-flex list-unstyled flex-wrap justify-content-between">
-            <li className="col-xs-12 col-md-12 col-lg-4">
+          <ul className="list-unstyled row">
+            <li className="col-12 col-md-4 mb-4">
               <div className="text-center">
                 <p className="numbers-home">+30</p>
                 <p className="roboto">Países diferentes</p>
               </div>
             </li>
-            <li className="col-xs-12 col-md-12 col-lg-4">
+            <li className="col-12 col-md-4 mb-4">
               <div className="text-center">
                 <p className="numbers-home">+200</p>
                 <p className="roboto">Demandas revisadas</p>
               </div>
             </li>
-            <li className="col-xs-12 col-md-12 col-lg-4">
+            <li className="col-12 col-md-4 mb-4">
               <div className="text-center">
                 <p className="numbers-home">+10 mil</p>
                 <p className="roboto">Personas capacitadas</p>
@@ -235,11 +235,10 @@ export default function Index() {
       </ul>
       {/* <div className={styles.bgVector3}></div> */}
 
-
-      <section className=" pt-180 pb-180">
+      <section id="contact-section" className=" pt-180 pb-180">
         <h2 className="p-xl color-white mb-0 text-center">Si querés saber más, solicita una cita con nuestros  <br /> profesionales en
           <span className="color-lima"> info@wider.global</span></h2>
       </section>
-    </div >
+    </ >
   );
 }

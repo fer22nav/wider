@@ -16,13 +16,15 @@
   border-left: 1px solid #F4ECE4;
   display: flex;
   padding-left: 42px;
-  /* justify-content: center; */
-  /* Centramos horizontalmente */
   align-items: center;
-  /* Centramos verticalmente */
-  /* text-align: center; */
-  /* Opcional: Para alinear el texto en el centro */
+}
 
+@media (max-width: 767px) {
+  .rightColumn {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 20px;
+  }
 }
 
 .bgVector1 {

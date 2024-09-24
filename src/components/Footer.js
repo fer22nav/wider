@@ -1,40 +1,37 @@
 import Image from 'next/image';
 import styles from '../styles/footer.module.css';
+import { Col, Row } from 'react-bootstrap';
 
 const Footer = () => {
+  //hacerlo responsive 
   return (
     <footer >
-      <div className={styles.container}>
-        <div>
+      <Row className={styles.container}>
+        <Col xs={12} md={4} lg={4} className="mb-5 d-flex justify-content-center align-items-center">
           <Image src="/images/logo-footer.svg"
             className=""
             width={100}
             height={56}
             alt="Wider Logo" />
-        </div>
-        <div>
+        </Col>
+        <Col xs={12} md={4} lg={4} className='mb-4'>
           <p className='titulo-footer'>Oficinas</p>
           <p className='p-footer'>EEUU | España | Argentina | Perú | México</p>
-          <a className='link-footer me-4' href="#">Copyright 2024</a>
+          <p className='p-xs color-white ' >Copyright 2024</p>
           <a className='link-footer me-4' href="#" >Política de Privacidad</a>
           <a className='link-footer' href="#" >Declaración de Accesibilidad</a>
-        </div>
-        <div>
+        </Col>
+        <Col xs={12} md={4} lg={4} className='mb-4'>
           <p className='titulo-footer'>Contacto</p>
           <p className='p-footer'>info@wider.global</p>
-          <Image src="/images/in-icon.svg"
-            className="me-2"
-            width={24}
-            height={24}
-            alt="Wider Logo" />
-          <Image src="/images/youtube-icon.svg"
-            className=""
-            width={24}
-            height={24}
-            alt="Wider Logo" />
-
-        </div>
-      </div>
+          <a href="https://www.linkedin.com/company/wider.global" className='text-decoration-none'>
+            <Image src="/images/in-icon.svg"
+              className="me-2"
+              width={24}
+              height={24}
+              alt="Linkedin Wider" /> </a>
+        </Col>
+      </Row>
     </footer>
   )
 }
