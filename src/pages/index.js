@@ -156,7 +156,7 @@ export default function Index() {
           <h2 className="titulo-l color-white mb-0">Solo trabajamos <br />con <span className="color-lima">expertos</span></h2>
         </Col>
         <Col xs={12} md={6} lg={6} >
-          <p className="p-m color-white mb-0">Todos nuestros profesionales tienen al menos<br /> 4 años de experiencia en accesibilidad y están <br />certificados internacionalmente a través de la<br /> Asociación Internacional de Profesionales de<br /> Accesibilidad (IAAP).</p>
+          <p className="p-l color-white mb-0">Todos nuestros profesionales tienen al menos<br /> 4 años de experiencia en accesibilidad y están <br />certificados internacionalmente a través de la<br /> Asociación Internacional de Profesionales de<br /> Accesibilidad (IAAP).</p>
         </Col>
       </Row>
 
