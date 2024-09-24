@@ -52,30 +52,12 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 560px;
-  width: 100%;
-}
-
-.auitoryIcon {
-  border-radius: 9px;
-  background: #1A194C;
-  height: 44px;
-  width: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 12px;
-}
-
-.strategyIcon {
-  border-radius: 9px;
-  background: #4542CC;
-  height: 44px;
-  width: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 12px;
-
+  width: calc(100% + 100px);
+  /* Aumenta el ancho para sobresalir */
+  position: absolute;
+  /* Usa posición absoluta */
+  left: -50px;
+  /* Ajusta este valor para sobresalir hacia la izquierda */
 }
 
 .legalIcon {
@@ -86,6 +68,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 12px;
+}
 
+.strategyIcon {
+  border-radius: 9px;
+  background: #4542CC;
+  height: 44px;
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.uxuiIcon {
+  border-radius: 9px;
+  background: #5452fc;
+  height: 44px;
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

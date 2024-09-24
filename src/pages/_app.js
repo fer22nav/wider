@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
   const { locale } = useRouter();
   const direction = locale === 'ar' || locale === 'he' ? 'rtl' : 'ltr';
 
-  const isMaintenanceMode = true;
+  const isMaintenanceMode = false;
 
   if (isMaintenanceMode) {
     return (

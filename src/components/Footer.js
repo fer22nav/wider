@@ -3,7 +3,7 @@ import styles from '../styles/footer.module.css';
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer >
       <div className={styles.container}>
         <div>
           <Image src="/images/logo-footer.svg"
