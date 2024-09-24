@@ -9,8 +9,18 @@ export default function Index() {
         <div className={styles.firstContainer}>
 
           <h1 className="opacity-0">Home wider accessibility</h1>
-          <h2 className="titulo-xxl color-white ">Hacemos más que<br /> accesibilidad</h2>
-          {/* <div className={styles.bgVector1}></div> */}
+          <h2 className="titulo-xxl color-white d-md-none">
+            Hacemos <br /> más que <br /> accesibilidad
+          </h2>
+
+          <h2 className="titulo-xxl color-white d-none d-md-block d-lg-none">
+            Hacemos más que <br /> accesibilidad
+          </h2>
+
+          <h2 className="titulo-xxl color-white d-none d-lg-block">
+            Hacemos más que <br /> accesibilidad
+          </h2>
+
           <div className={styles.paragraphContainer}>
             <p className='p-xl color-white mb-0'><span className="color-lima">Estrategias escalables</span> para cada cliente.</p>
             <p className='p-xl color-white'><span className="color-lima"> Experiencias memorables</span> para todas las personas.</p>
@@ -27,10 +37,10 @@ export default function Index() {
           </Row>
         </div>
         <Row className={styles.gridContainer}>
-          <Col xs={12} md={6} lg={7} >
+          <Col xs={12} md={6} lg={7} className="text-center text-md-start">
             <h2 className="titulo-l color-white mb-0">Diseño, estrategia,<br />innovación e inclusión.</h2>
           </Col>
-          <Col xs={12} md={6} lg={5} className={styles.rightColumn}>
+          <Col xs={12} md={6} lg={5} c className={`${styles.rightColumn} text-center text-md-start`}>
             <p className="p-m color-white mb-0">Combinamos el <span className="color-lima">pensamiento estratégico, la<br /> accesibilidad y la tecnología</span> para crear <br />experiencias memorables para todas las<br /> personas.</p>
           </Col>
         </Row>
@@ -38,7 +48,7 @@ export default function Index() {
       <section className="" >
         <Row className={styles.gridContainer}>
           <div className="d-flex justify-content-center">
-            <h2 className="titulo-xl color-white">Nuestra Experiencia</h2>
+            <h2 className="titulo-xl color-white text-center text-md-start">Nuestra Experiencia</h2>
           </div>
 
           <ul className="list-unstyled row">
@@ -67,7 +77,7 @@ export default function Index() {
       <section >
         <div className="row">
           <div className="col-12 col-md-12 col-lg-4 ">
-            <h2 className="titulo-l color-white mb-4">
+            <h2 className="titulo-l color-white mb-4 text-center text-md-start">
               Algunos de<br /> nuestros<br />
               <span className="color-lima">clientes</span>
             </h2>
@@ -152,7 +162,7 @@ export default function Index() {
         </div>
       </section>
       <Row className={styles.gridContainer}>
-        <Col xs={12} md={6} lg={6} >
+        <Col xs={12} md={6} lg={6} className="mb-4 mb-md-0">
           <h2 className="titulo-l color-white mb-0">Solo trabajamos <br />con <span className="color-lima">expertos</span></h2>
         </Col>
         <Col xs={12} md={6} lg={6} >

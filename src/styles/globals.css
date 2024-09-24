@@ -93,6 +93,13 @@ a:hover {
 
 }
 
+@media (max-width: 600px) {
+  .titulo-xxl {
+    font-size: 58px
+      /* Ajusta el tamaño de la fuente solo en móviles */
+  }
+}
+
 .titulo-xl {
   font-family: var(--font-readex-pro);
   font-size: 70px;
@@ -149,6 +156,13 @@ a:hover {
   font-weight: 400;
   line-height: 48px;
   letter-spacing: -1.2px;
+}
+
+@media (max-width: 600px) {
+  .p-xl {
+    font-size: 30px
+      /* Ajusta el tamaño de la fuente solo en móviles */
+  }
 }
 
 .p-l {
