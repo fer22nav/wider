@@ -40,7 +40,7 @@ export default function Index() {
           <Col xs={12} md={6} lg={7} className="text-center text-md-start">
             <h2 className="titulo-l color-white mb-0">Diseño, estrategia,<br />innovación e inclusión.</h2>
           </Col>
-          <Col xs={12} md={6} lg={5} c className={`${styles.rightColumn} text-center text-md-start`}>
+          <Col xs={12} md={6} lg={5} className={`${styles.rightColumn} text-center text-md-start pe-0`}>
             <p className="p-m color-white mb-0">Combinamos el <span className="color-lima">pensamiento estratégico, la<br /> accesibilidad y la tecnología</span> para crear <br />experiencias memorables para todas las<br /> personas.</p>
           </Col>
         </Row>
