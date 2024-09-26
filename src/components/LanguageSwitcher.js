@@ -10,7 +10,6 @@ const LanguageSwitcher = () => {
     const newLocale = locale === 'es' ? 'en' : 'es';
     const { pathname, asPath, query } = router;
     router.push({ pathname, query }, asPath, { locale: newLocale });
-    console.log(newLocale)
   };
 
   return (
