@@ -42,7 +42,7 @@ export default function Index() {
               </a>
             </Col>
             {/* <Col xs={12} md={12} lg={10} >
-              <button className='button-blue p-boton'>Descargar brochure de servicios</button>
+              <button className='button-blue p-boton'>{t('contactbt')}</button>
             </Col> */}
           </Row>
         </div>
