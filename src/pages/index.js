@@ -135,10 +135,10 @@ export default function Index() {
               </li>
               <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
                 <Image
-                  width={120}
+                  width={180}
                   height={80}
-                  src="/images/sky.svg"
-                  alt="sky"
+                  src="/images/eafit.svg"
+                  alt="universidad EAFIT"
                 />
               </li>
               <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
@@ -146,7 +146,7 @@ export default function Index() {
                   width={150}
                   height={80}
                   src="/images/unibarcelona.svg"
-                  alt="unibarcelona"
+                  alt="universidad de barcelona"
                 />
               </li>
               <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
