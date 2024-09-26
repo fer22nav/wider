@@ -1,11 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/globals.css';
+import '../../i18n'; // Importar la inicialización de i18next
+import React, { useEffect, useState } from 'react';
+import { appWithTranslation } from 'next-i18next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { appWithTranslation } from 'next-i18next';
-import Maintenance from './Maintenance';
+import Maintenance from './Maintenance'; // Modo mantenimiento (por si es necesario)
 
 const metadata = {
   title: 'Home wider accessibility',
@@ -14,9 +16,18 @@ const metadata = {
 
 function MyApp({ Component, pageProps }) {
   const { locale } = useRouter();
-  const direction = locale === 'ar' || locale === 'he' ? 'rtl' : 'ltr';
+  const direction = locale === 'ar' || locale === 'he' ? 'rtl' : 'ltr'; // Manejo de texto RTL para árabe o hebreo
 
   const isMaintenanceMode = false;
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null; // Evitar renderizar hasta que esté montado en el cliente
+  }
 
   if (isMaintenanceMode) {
     return (
@@ -49,4 +60,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default appWithTranslation(MyApp);
+export default appWithTranslation(MyApp); // No necesitas pasar nextI18NextConfig aquí

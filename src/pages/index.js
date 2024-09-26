@@ -1,34 +1,44 @@
+import React from 'react';
+import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import styles from '../styles/main.module.css';
 import { Col, Container, Row } from "react-bootstrap";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    },
+  };
+}
 
 export default function Index() {
+  const { t } = useTranslation('common');
   return (
     <div>
       <section>
         <div className={styles.firstContainer}>
 
           <h1 className="opacity-0">Home wider accessibility</h1>
-          <h2 className="titulo-xxl color-white d-md-none">
-            Hacemos <br /> más que <br /> accesibilidad
-          </h2>
 
-          <h2 className="titulo-xxl color-white d-none d-md-block d-lg-none">
-            Hacemos más que <br /> accesibilidad
+          <h2 className="titulo-xxl color-white d-md-none" dangerouslySetInnerHTML={{ __html: t('welcome') }}>
           </h2>
+          <h2 className="titulo-xxl color-white d-none d-md-block d-lg-none" dangerouslySetInnerHTML={{ __html: t('welcome') }}>
 
-          <h2 className="titulo-xxl color-white d-none d-lg-block">
-            Hacemos más que <br /> accesibilidad
+          </h2>
+          <h2 className="titulo-xxl color-white d-none d-lg-block" dangerouslySetInnerHTML={{ __html: t('welcome') }}>
+
           </h2>
 
           <div className={styles.paragraphContainer}>
-            <p className='p-xl color-white mb-0'><span className="color-lima">Estrategias escalables</span> para cada cliente.</p>
-            <p className='p-xl color-white'><span className="color-lima"> Experiencias memorables</span> para todas las personas.</p>
+            <p className='p-xl color-white mb-0' dangerouslySetInnerHTML={{ __html: t('description1') }}></p>
+            <p className='p-xl color-white' dangerouslySetInnerHTML={{ __html: t('description2') }}></p>
           </div>
           <Row >
             <Col xs={12} md={12} lg={2} >
               <a href="#contact-section" className='button-lima p-boton d-inline-flex text-decoration-none'>
-                Contáctanos
+                {t('contactbt')}
               </a>
             </Col>
             {/* <Col xs={12} md={12} lg={10} >
@@ -252,3 +262,4 @@ export default function Index() {
     </div >
   );
 }
+
