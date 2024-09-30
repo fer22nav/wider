@@ -101,9 +101,8 @@ h1, h2, h3, h4, h5, h6 {
   /* Alinea el contenedor en relación con el contenedor padre más cercano con position: relative */
   top: -35px;
   right: 0;
-  width: 100vw;
   margin-right: 0;
-  overflow: visible;
+  overflow: hidden;
   z-index: 10;
   text-align: right;
   /* Asegura que esté por encima de otros elementos */
@@ -114,6 +113,7 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
   object-position: right;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 90%);
+  pointer-events: none;
 }
 
 a {
