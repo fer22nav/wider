@@ -425,20 +425,6 @@ a:hover {
 }
 
 
-/* .button-lima:hover {
-  box-shadow: 0 0 0 3px white, 0 0 0 5px linear-gradient(45deg, var(--color-lima), var(--color-magenta));
-} */
-
-/* Hover state */
-/* .button-lima:hover {
-  border-radius: 34px;
-  border-image: linear-gradient(45deg, var(--color-lima), var(--color-magenta)) 1;
-} */
-
-/* .button-blue:hover {
-  border-radius: 34px;
-  border-image: linear-gradient(45deg, var(--color-blue), var(--color-blue-light)) 1;
-} */
 
 /* Pressed (Active) state */
 .button-lima:active {
@@ -453,13 +439,6 @@ a:hover {
   box-shadow: 1px 2px 8px 0px var(--color-blue);
 }
 
-/* Focus state */
-/* .button-lima:focus {
-  border-color: var(--color-blue);
-  border-width: 2px;
-  border-style: solid;
-}
-*/
 .button-blue:focus-visible {
   outline: 3px solid rgba(0, 123, 255, 0.5);
 }
@@ -497,48 +476,6 @@ a:hover {
   font-weight: 800;
   line-height: normal;
 }
-
-.card-text {
-  display: inline-block;
-  color: var(--gray-text);
-  font-family: var(--font-nunito-sans);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.card-photo {
-  border-radius: 110px;
-}
-
-.card-container-hizontal {
-  box-shadow: -4px 5px 8px 0px rgba(78, 71, 255, 0.10);
-  border-radius: 34px;
-  background-color: var(--color-white);
-  padding: 50px 40px;
-  display: flex;
-}
-
-.card-title-horizontal {
-  color: #343299;
-  font-family: var(--font-nunito-sans);
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-
-
-
-.text-container {
-  background: url('/images/dialog-team.svg') no-repeat center center;
-  background-size: cover;
-  padding: 2rem;
-  height: 440px;
-  width: 1140px;
-}
-
 
 
 .card-container-small {
