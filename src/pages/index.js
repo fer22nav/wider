@@ -17,37 +17,36 @@ export async function getStaticProps({ locale }) {
 export default function Index() {
   const { t } = useTranslation('common');
   return (
-    <div>
+    <>
+      <div className="full-width-container-right">
+        <Image src="/images/yellow-outline-drawing.svg" alt="Línea decorativa" className="full-width-image-right" width={300} height={1000} />
+      </div>
       <section>
         <div className={styles.firstContainer}>
 
           <h1 className="opacity-0">Home wider accessibility</h1>
 
-          <h2 className="titulo-xxl color-white d-md-none" dangerouslySetInnerHTML={{ __html: t('welcome') }}>
-          </h2>
-          <h2 className="titulo-xxl color-white d-none d-md-block d-lg-none" dangerouslySetInnerHTML={{ __html: t('welcome') }}>
-
-          </h2>
-          <h2 className="titulo-xxl color-white d-none d-lg-block" dangerouslySetInnerHTML={{ __html: t('welcome') }}>
-
-          </h2>
+          <h2 className="titulo-xxl color-white d-md-none" dangerouslySetInnerHTML={{ __html: t('welcome_xs') }}></h2>
+          <h2 className="titulo-xxl color-white d-none d-md-block d-lg-none" dangerouslySetInnerHTML={{ __html: t('welcome_md') }}></h2>
+          <h2 className="titulo-xxl color-white d-none d-lg-block" dangerouslySetInnerHTML={{ __html: t('welcome_lg') }}></h2>
+          <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={300} height={20} />
 
           <div className={styles.paragraphContainer}>
             <p className='p-xl color-white mb-0' dangerouslySetInnerHTML={{ __html: t('description1') }}></p>
             <p className='p-xl color-white' dangerouslySetInnerHTML={{ __html: t('description2') }}></p>
           </div>
-          <Row >
-            <Col xs={12} md={12} lg={2} >
+          <Row>
+            <Col xs={12} md={12} lg={2}>
               <a href="#contact-section" className='button-lima p-boton d-inline-flex text-decoration-none'>
                 {t('contactbt')}
               </a>
             </Col>
             {/* <Col xs={12} md={12} lg={10} >
-              <button className='button-blue p-boton'>{t('contactbt')}</button>
-            </Col> */}
+      <button className='button-blue p-boton'>{t('contactbt')}</button>
+    </Col> */}
           </Row>
         </div>
-        <Row className={styles.gridContainer}>
+        <Row style={{ paddingTop: '100px' }}>
           <Col xs={12} md={6} lg={7} className="text-center text-md-start">
             <h2 className="titulo-l color-white mb-0" dangerouslySetInnerHTML={{ __html: t('desingh2') }}></h2>
           </Col>
@@ -56,8 +55,11 @@ export default function Index() {
           </Col>
         </Row>
       </section>
-      <section className="" >
-        <Row className={styles.gridContainer}>
+      <div className="full-width-container-left">
+        <Image src="/images/pink-outline-drawing2.svg" alt="Línea decorativa" className="full-width-image-left" layout="responsive" width={300} height={1000} />
+      </div>
+      <section className="">
+        <Row style={{ paddingBottom: '350px', marginTop: '50px' }}>
           <div className="d-flex justify-content-center">
             <h2 className="titulo-xl color-white text-center text-md-start"> {t('experienceH2')}</h2>
           </div>
@@ -85,7 +87,7 @@ export default function Index() {
         </Row>
 
       </section>
-      <section >
+      <section>
         <div className="row">
           <div className="col-12 col-md-12 col-lg-4 ">
             <h2 className="titulo-l color-white mb-4 text-center text-md-start" dangerouslySetInnerHTML={{ __html: t('someClients') }}>
@@ -98,166 +100,186 @@ export default function Index() {
                   width={150}
                   height={80}
                   src="/images/smartecarte.svg"
-                  alt="smartecarte"
-                />
+                  alt="smartecarte" />
               </li>
               <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
                 <Image
                   width={300}
                   height={80}
                   src="/images/volvo.svg"
-                  alt="volvo"
-                />
+                  alt="volvo" />
               </li>
               <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
                 <Image
                   width={150}
                   height={80}
                   src="/images/bid.svg"
-                  alt="bid"
-                />
+                  alt="bid" />
               </li>
               <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
                 <Image
                   width={150}
                   height={80}
                   src="/images/modo.svg"
-                  alt="modo"
-                />
+                  alt="modo" />
               </li>
               <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
                 <Image
                   width={150}
                   height={80}
                   src="/images/rga.svg"
-                  alt="rga"
-                />
+                  alt="rga" />
               </li>
               <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
                 <Image
                   width={180}
                   height={80}
                   src="/images/eafit.svg"
-                  alt="universidad EAFIT"
-                />
+                  alt="universidad EAFIT" />
               </li>
               <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
                 <Image
                   width={150}
                   height={80}
                   src="/images/unibarcelona.svg"
-                  alt="universidad de barcelona"
-                />
+                  alt="universidad de barcelona" />
               </li>
               <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
                 <Image
                   width={150}
                   height={80}
                   src="/images/bcp.svg"
-                  alt="bcp"
-                />
+                  alt="bcp" />
               </li>
               <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
                 <Image
                   width={80}
                   height={80}
                   src="/images/itx.svg"
-                  alt="ITX"
-                />
+                  alt="ITX" />
               </li>
             </ul>
 
           </div>
         </div>
       </section>
-      <Row className={styles.gridContainer}>
-        <Col xs={12} md={6} lg={6} className="mb-4 mb-md-0">
-          <h2 className="titulo-l color-white mb-0" dangerouslySetInnerHTML={{ __html: t('expertsH2') }}></h2>
-        </Col>
-        <Col xs={12} md={6} lg={6} >
-          <p className="p-l color-white mb-0" dangerouslySetInnerHTML={{ __html: t('expertsP') }}></p>
-        </Col>
-      </Row>
+      <div class="full-width-container">
+        <Image
+          src="/images/blue-outline-drawing.svg"
+          width={1500}
+          height={500}
+          alt="linea decorativa"
+          layout="responsive"
+          className="full-width-image"
+        />
+      </div>
+      <section>
+        <Row className="mb-5 mt-4">
+          <Col xs={12} md={6} lg={6} className="mb-4 mb-md-0">
+            <h2 className="titulo-l color-white mb-0" dangerouslySetInnerHTML={{ __html: t('expertsH2') }}></h2>
+            <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={300} height={20} style={{ marginLeft: '20px' }} />
+          </Col>
+          <Col xs={12} md={6} lg={6}>
+            <p className="p-l color-white mb-0" dangerouslySetInnerHTML={{ __html: t('expertsP') }}></p>
+          </Col>
+        </Row>
 
-      <ul className="row list-unstyled">
-        {/* Tarjeta 1 */}
-        <li className="col-xs-12 col-md-6 col-lg-3 mb-4 d-flex">
-          <div className="card-container-small">
-            <div className="d-flex">
-              <div className={styles.legalIcon}>
-                <Image
-                  src="/images/legal-team-icon.svg"
-                  width={33}
-                  height={33}
-                  alt="legal Logo"
-                />
+        <ul className="row list-unstyled">
+          {/* Tarjeta 1 */}
+          <li className="col-xs-12 col-md-6 col-lg-3 mb-4 d-flex">
+            <div className="card-container-small">
+              <div className="d-flex">
+                <div className={styles.legalIcon}>
+                  <Image
+                    src="/images/legal-team-icon.svg"
+                    width={33}
+                    height={33}
+                    alt="legal Logo" />
+                </div>
+                <p className="p-card-small-title" dangerouslySetInnerHTML={{ __html: t('LegalTeamTitle') }}></p>
               </div>
-              <p className="p-card-small-title" dangerouslySetInnerHTML={{ __html: t('LegalTeamTitle') }}></p>
+              <p className="p-card-small" dangerouslySetInnerHTML={{ __html: t('LegalTeamP') }}></p>
             </div>
-            <p className="p-card-small" dangerouslySetInnerHTML={{ __html: t('LegalTeamP') }}></p>
-          </div>
-        </li>
+          </li>
 
-        {/* Tarjeta 2 */}
-        <li className="col-xs-12 col-md-6 col-lg-3 mb-4 d-flex">
-          <div className="card-container-small">
-            <div className="d-flex">
-              <div className={styles.legalIcon}>
-                <Image
-                  src="/images/testing-icon.svg"
-                  width={33}
-                  height={33}
-                  alt="testing Logo"
-                />
+          {/* Tarjeta 2 */}
+          <li className="col-xs-12 col-md-6 col-lg-3 mb-4 d-flex">
+            <div className="card-container-small">
+              <div className="d-flex">
+                <div className={styles.legalIcon}>
+                  <Image
+                    src="/images/testing-icon.svg"
+                    width={33}
+                    height={33}
+                    alt="testing Logo" />
+                </div>
+                <p className="p-card-small-title" dangerouslySetInnerHTML={{ __html: t('testingTeamTitle') }}></p>
               </div>
-              <p className="p-card-small-title" dangerouslySetInnerHTML={{ __html: t('testingTeamTitle') }}></p>
+              <p className="p-card-small" dangerouslySetInnerHTML={{ __html: t('testingTeamP') }}></p>
             </div>
-            <p className="p-card-small" dangerouslySetInnerHTML={{ __html: t('testingTeamP') }}></p>
-          </div>
-        </li>
+          </li>
 
-        {/* Tarjeta 3 */}
-        <li className="col-xs-12 col-md-6 col-lg-3 mb-4 d-flex">
-          <div className="card-container-small">
-            <div className="d-flex">
-              <div className={styles.strategyIcon}>
-                <Image
-                  src="/images/transformation-icon.svg"
-                  width={24}
-                  height={24}
-                  alt="Accesibility Logo"
-                />
+          {/* Tarjeta 3 */}
+          <li className="col-xs-12 col-md-6 col-lg-3 mb-4 d-flex">
+            <div className="card-container-small">
+              <div className="d-flex">
+                <div className={styles.strategyIcon}>
+                  <Image
+                    src="/images/transformation-icon.svg"
+                    width={24}
+                    height={24}
+                    alt="Accesibility Logo" />
+                </div>
+                <p className="p-card-small-title" dangerouslySetInnerHTML={{ __html: t('accesibilityTitle') }}></p>
               </div>
-              <p className="p-card-small-title" dangerouslySetInnerHTML={{ __html: t('accesibilityTitle') }}></p>
+              <p className="p-card-small" dangerouslySetInnerHTML={{ __html: t('accesibilityP') }}></p>
             </div>
-            <p className="p-card-small" dangerouslySetInnerHTML={{ __html: t('accesibilityP') }}></p>
-          </div>
-        </li>
+          </li>
 
-        {/* Tarjeta 4 */}
-        <li className="col-xs-12 col-md-6 col-lg-3 mb-4 d-flex">
-          <div className="card-container-small">
-            <div className="d-flex">
-              <div className={styles.uxuiIcon}>
-                <Image
-                  src="/images/uxui-icon.svg"
-                  width={33}
-                  height={33}
-                  alt="Wider Logo"
-                />
+          {/* Tarjeta 4 */}
+          <li className="col-xs-12 col-md-6 col-lg-3 mb-4 d-flex">
+            <div className="card-container-small">
+              <div className="d-flex">
+                <div className={styles.uxuiIcon}>
+                  <Image
+                    src="/images/uxui-icon.svg"
+                    width={33}
+                    height={33}
+                    alt="Wider Logo" />
+                </div>
+                <p className="p-card-small-title" dangerouslySetInnerHTML={{ __html: t('uxuiTitle') }}></p>
               </div>
-              <p className="p-card-small-title" dangerouslySetInnerHTML={{ __html: t('uxuiTitle') }}></p>
+              <p className="p-card-small" dangerouslySetInnerHTML={{ __html: t('uxuiP') }}></p>
             </div>
-            <p className="p-card-small" dangerouslySetInnerHTML={{ __html: t('uxuiP') }}></p>
-          </div>
-        </li>
-      </ul>
-      {/* <div className={styles.bgVector3}></div> */}
+          </li>
+        </ul>
+      </section>
+      <div class="full-width-container">
+        <Image
+          src="/images/blue-outline-drawing2.svg"
+          width={1500}
+          height={500}
+          alt="linea decorativa"
+          layout="responsive"
+          className="full-width-image"
+        />
+      </div>
 
       <section id="contact-section" className=" pt-180 pb-180">
         <h2 className="p-xl color-white mb-0 text-center" dangerouslySetInnerHTML={{ __html: t('constactMail') }}></h2>
       </section>
-    </div >
+
+      <div class="full-width-container">
+        <Image
+          src="/images/pink-drawing.svg"
+          width={1500}
+          height={500}
+          alt="linea decorativa"
+          layout="responsive"
+          className="full-width-image"
+        />
+      </div>
+    </>
   );
 }
 

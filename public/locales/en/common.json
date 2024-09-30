@@ -1,5 +1,7 @@
 {
-  "welcome": "We make the digital world <span class='color-lima'>Wider</span>",
+  "welcome_xs": "We make the digital world <span class='color-lima'>Wider</span>",
+  "welcome_md": "We make the digital world <span class='color-lima'>Wider</span>",
+  "welcome_lg": "We make the digital <br /> world <span class='color-lima'>Wider</span>",
   "description1": "<span class='color-lima'>Scalable strategies</span> for every client",
   "description2": "<span class='color-lima'>Memorable experiences</span> for everyone",
   "contactbt": "Contact Us",

@@ -32,42 +32,88 @@ body {
   padding: 0;
 }
 
-/* Estilos para mobile: 600px y menos */
+/* Estilos responsivos */
 @media (max-width: 600px) {
   body {
     width: 90%;
-    /* Ancho reducido para permitir márgenes a los lados */
     max-width: 600px;
-    /* Ancho máximo del body */
     margin: 0 auto;
   }
 }
 
-/* Estilos para tablet: 601px - 1439px */
 @media (min-width: 601px) and (max-width: 1439px) {
   body {
     width: 90%;
-    /* Ancho del 90% del viewport para dejar margen */
     max-width: 1200px;
-    /* Máximo ancho del body */
     margin: 0 auto;
-    /* Centrado con márgenes automáticos */
   }
 }
 
-/* Estilos para desktop: 1440px y más */
 @media (min-width: 1440px) {
   body {
     max-width: 1440px;
-    /* Ancho máximo */
     margin: 0 auto;
-    /* Centrado con márgenes automáticos */
   }
+}
+
+/* Contenedor para las imágenes que ocuparán el 100% del ancho del viewport */
+.full-width-container {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+}
+
+/* Ajusta la imagen para que ocupe todo el ancho del contenedor */
+.full-width-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Contenedor para las imágenes que ocuparán el 100% del ancho del viewport y se alinearán a la izquierda */
+.full-width-container-left {
+  position: relative;
+  width: 100vw;
+  left: 0;
+  margin-left: -20vw;
+  margin-right: 0;
+  overflow: hidden;
+}
+
+/* Ajusta la imagen para que ocupe todo el ancho del contenedor */
+.full-width-image-left {
+  width: 1500px;
+  height: auto;
+  transform: translateY(-20px);
 }
 
 h1, h2, h3, h4, h5, h6 {
   /* color: var(--primary-color); */
   margin-top: 0;
+}
+
+/* Contenedor para las imágenes que ocuparán el 100% del ancho del viewport y se alinearán a la derecha */
+.full-width-container-right {
+  position: absolute;
+  /* Alinea el contenedor en relación con el contenedor padre más cercano con position: relative */
+  top: -35px;
+  right: 0;
+  width: 100vw;
+  margin-right: 0;
+  overflow: visible;
+  z-index: 10;
+  text-align: right;
+  /* Asegura que esté por encima de otros elementos */
+}
+
+.full-width-image-right {
+  width: 400px;
+  height: auto;
+  object-position: right;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0) 100%);
 }
 
 a {

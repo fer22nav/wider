@@ -17,8 +17,9 @@ const Header = () => (
           />
         </Link>
       </div>
-
-      <LanguageSwitcher />
+      <div className="me-lg-5">
+        <LanguageSwitcher />
+      </div>
     </div>
   </header>
 );
