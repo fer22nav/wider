@@ -1,6 +1,7 @@
 import React from 'react'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
+import Image from 'next/image';
 export async function getStaticProps({ locale }) {
   return {
     props: {
@@ -14,7 +15,10 @@ export default function PrivacyPolicy() {
   const { t } = useTranslation('privacyPolicy');
   return (
     <div>
-      <h1 className="titulo-xxl color-white pt-180 pb-180" dangerouslySetInnerHTML={{ __html: t('title') }}></h1>
+      <h1 className="titulo-xxl color-white pt-180 " dangerouslySetInnerHTML={{ __html: t('title') }}></h1>
+      <div className='pb-180'>
+        <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={300} height={20} />
+      </div>
       <p className='update-privacy-policy mb-50'>{t('updated')}</p>
       <p className='p-nav color-white mb-50'>{t('widerP')}</p>
       <h2 className='h2-privacy-policy '>{t('subtitle1')}</h2>
@@ -164,11 +168,21 @@ export default function PrivacyPolicy() {
       <p className="p-nav color-white">{t('caloppa.request_info')}</p>
       <p className="p-nav color-white mb-50">{t('caloppa.no_selling_info')}</p>
 
-      <h2 className="p-xl color-white mb-0 text-center mb-50">
+      <p className="p-xl color-white mb-0 text-center mb-50">
         {t('contact_us.text')}
         <span className="color-lima"> info@wider.global </span>
         {t('contact_us.suffix')}
-      </h2>
+      </p>
+      <div class="full-width-container">
+        <Image
+          src="/images/pink-drawing.svg"
+          width={1500}
+          height={500}
+          alt="linea decorativa"
+          layout="responsive"
+          className="full-width-image"
+        />
+      </div>
     </div>
   )
 }

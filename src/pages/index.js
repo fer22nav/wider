@@ -89,11 +89,11 @@ export default function Index() {
       </section>
       <section>
         <div className="row">
-          <div className="col-12 col-md-12 col-lg-4 ">
+          <div className="col-12 col-md-12 col-lg-4 mb-md-5 mb-lg-0">
             <h2 className="titulo-l color-white mb-4 text-center text-md-start" dangerouslySetInnerHTML={{ __html: t('someClients') }}>
             </h2>
           </div>
-          <div className="col-12 col-md-12 col-lg-8">
+          <div className="col-12 col-md-12 col-lg-8 mt-md-5">
             <ul className="row list-unstyled">
               <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
                 <Image
@@ -163,6 +163,39 @@ export default function Index() {
           </div>
         </div>
       </section>
+
+
+      {/* Flecha para pantallas grandes (escritorio, apuntando a la derecha) */}
+      <div className="arrow-container d-none d-lg-block">
+        <Image
+          src="/images/arrow-right.svg"
+          alt="Desktop Arrow"
+          width={300}
+          height={50}
+          className="desktop-arrow"
+        />
+      </div>
+      {/* Flecha para tablets (apuntando hacia abajo, pero posicionada diferente) */}
+      <div className="arrow-container d-none d-md-block d-lg-none">
+        <Image
+          src="/images/tablet-arrow.svg"
+          alt="Tablet and Mobile Arrow"
+          width={100}
+          height={200}
+          className="tablet-arrow"
+        />
+      </div>
+      {/* Flecha para tablets y móviles (apuntando hacia abajo) */}
+      <div className="arrow-container d-block d-md-none">
+        <Image
+          src="/images/arrow-botton.svg"
+          alt="Tablet and Mobile Arrow"
+          width={50}
+          height={200}
+          className="mobile-arrow"
+        />
+      </div>
+
       <div class="full-width-container">
         <Image
           src="/images/blue-outline-drawing.svg"
@@ -175,8 +208,8 @@ export default function Index() {
       </div>
       <section>
         <Row className="mb-5 mt-4">
-          <Col xs={12} md={6} lg={6} className="mb-4 mb-md-0">
-            <h2 className="titulo-l color-white mb-0" dangerouslySetInnerHTML={{ __html: t('expertsH2') }}></h2>
+          <Col xs={12} md={6} lg={6} className="mb-4 mb-md-0 ">
+            <h2 className="titulo-l color-white" dangerouslySetInnerHTML={{ __html: t('expertsH2') }}></h2>
             <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={300} height={20} style={{ marginLeft: '20px' }} />
           </Col>
           <Col xs={12} md={6} lg={6}>
@@ -267,6 +300,9 @@ export default function Index() {
 
       <section id="contact-section" className=" pt-180 pb-180">
         <h2 className="p-xl color-white mb-0 text-center" dangerouslySetInnerHTML={{ __html: t('constactMail') }}></h2>
+        <div className="d-flex justify-content-center">
+          <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={300} height={20} className="large-margin-right" />
+        </div>
       </section>
 
       <div class="full-width-container">

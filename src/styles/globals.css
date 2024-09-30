@@ -33,15 +33,25 @@ body {
 }
 
 /* Estilos responsivos */
-@media (max-width: 600px) {
+@media (max-width: 599px) {
   body {
     width: 90%;
-    max-width: 600px;
+    max-width: 599px;
     margin: 0 auto;
   }
 }
 
-@media (min-width: 601px) and (max-width: 1439px) {
+/* Tablets entre 600px y 1023px */
+@media (min-width: 600px) and (max-width: 1023px) {
+  body {
+    width: 90%;
+    max-width: 1023px;
+    margin: 0 auto;
+  }
+}
+
+/* Pantallas pequeñas y medianas (laptops) entre 1024px y 1439px */
+@media (min-width: 1024px) and (max-width: 1439px) {
   body {
     width: 90%;
     max-width: 1200px;
@@ -49,6 +59,7 @@ body {
   }
 }
 
+/* Pantallas grandes (escritorio) a partir de 1440px */
 @media (min-width: 1440px) {
   body {
     max-width: 1440px;
@@ -114,6 +125,44 @@ h1, h2, h3, h4, h5, h6 {
   object-position: right;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 90%);
   pointer-events: none;
+}
+
+.arrow-container {
+  position: relative;
+  /* Esto asegura que la imagen dentro pueda ser posicionada de forma absoluta */
+  width: 100%;
+  /* O cualquier otro valor que necesites */
+  height: auto;
+}
+
+/* Posición para la flecha de escritorio (apuntando a la derecha) */
+.desktop-arrow {
+  position: absolute;
+  top: -150px;
+  left: 20%;
+  z-index: 100;
+}
+
+/* Posición para la flecha de tablets y móviles (apuntando hacia abajo) */
+.tablet-arrow {
+  position: absolute;
+  top: -520px;
+  left: 40%;
+  z-index: 100;
+}
+
+.mobile-arrow {
+  position: absolute;
+  top: -1000px;
+  left: 90%;
+  z-index: 100;
+}
+
+@media (min-width: 992px) {
+  .large-margin-right {
+    margin-right: 430px;
+    /* Ajusta el valor del margen según lo que necesites */
+  }
 }
 
 a {
@@ -240,7 +289,7 @@ a:hover {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  /* line-height: 100%; */
+  line-height: inherit;
 }
 
 .p-card-small-title {
@@ -554,7 +603,7 @@ a:hover {
   font-family: var(--font-nunito-sans);
   font-size: 30px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
 }
 

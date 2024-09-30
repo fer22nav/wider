@@ -1,6 +1,7 @@
 import React from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
+import Image from 'next/image';
 
 export async function getStaticProps({ locale }) {
   return {
@@ -16,7 +17,9 @@ export default function AccessibilityStatement() {
   return (
     <div>
       <h1 className="titulo-xxl color-white pt-180 mb-50" dangerouslySetInnerHTML={{ __html: t('title') }}></h1>
-
+      <div className='pb-180'>
+        <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={300} height={20} />
+      </div>
       <p className="h2-privacy-policy mb-50">
         <span className="color-lima">{t('wider')}</span> {t('entity_message')}
       </p>
@@ -83,10 +86,20 @@ export default function AccessibilityStatement() {
         <li>{t('enforcement_procedure.contact')}</li>
       </ul>
 
-      <h2
-        className="p-xl color-white mb-0 mb-50"
+      <p
+        className="p-xl color-white mb-50"
         dangerouslySetInnerHTML={{ __html: t('learn_more_with_email') }}
-      ></h2>
+      ></p>
+      <div class="full-width-container">
+        <Image
+          src="/images/pink-drawing.svg"
+          width={1500}
+          height={500}
+          alt="linea decorativa"
+          layout="responsive"
+          className="full-width-image"
+        />
+      </div>
     </div>
   );
 }
