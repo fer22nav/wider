@@ -2,6 +2,7 @@ import React from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
+import { Container } from 'react-bootstrap';
 
 export async function getStaticProps({ locale }) {
   return {
@@ -15,7 +16,7 @@ export default function AccessibilityStatement() {
   const { t } = useTranslation('accessibilityStatement');
 
   return (
-    <div>
+    <Container>
       <h1 className="titulo-xxl color-white pt-180 mb-50" dangerouslySetInnerHTML={{ __html: t('title') }}></h1>
       <div className='pb-180'>
         <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={300} height={20} />
@@ -90,7 +91,7 @@ export default function AccessibilityStatement() {
         className="p-xl color-white mb-50"
         dangerouslySetInnerHTML={{ __html: t('learn_more_with_email') }}
       ></p>
-      <div class="full-width-container">
+      <div className="full-width-container">
         <Image
           src="/images/pink-drawing.svg"
           width={1500}
@@ -100,6 +101,6 @@ export default function AccessibilityStatement() {
           className="full-width-image"
         />
       </div>
-    </div>
+    </Container>
   );
 }

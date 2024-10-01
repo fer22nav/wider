@@ -17,7 +17,7 @@ export async function getStaticProps({ locale }) {
 export default function Index() {
   const { t } = useTranslation('common');
   return (
-    <>
+    <Container>
       <div className="full-width-container-right">
         <Image src="/images/yellow-outline-drawing.svg" alt="Línea decorativa" className="full-width-image-right" width={300} height={1000} />
       </div>
@@ -196,7 +196,7 @@ export default function Index() {
         />
       </div>
 
-      <div class="full-width-container">
+      <div className="full-width-container">
         <Image
           src="/images/blue-outline-drawing.svg"
           width={1500}
@@ -287,7 +287,7 @@ export default function Index() {
           </li>
         </ul>
       </section>
-      <div class="full-width-container">
+      <div className="full-width-container">
         <Image
           src="/images/blue-outline-drawing2.svg"
           width={1500}
@@ -305,7 +305,7 @@ export default function Index() {
         </div>
       </section>
 
-      <div class="full-width-container">
+      <div className="full-width-container">
         <Image
           src="/images/pink-drawing.svg"
           width={1500}
@@ -315,7 +315,7 @@ export default function Index() {
           className="full-width-image"
         />
       </div>
-    </>
+    </Container>
   );
 }
 

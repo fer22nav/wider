@@ -2,6 +2,7 @@ import React from 'react'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
+import { Container } from 'react-bootstrap';
 export async function getStaticProps({ locale }) {
   return {
     props: {
@@ -14,7 +15,7 @@ export async function getStaticProps({ locale }) {
 export default function PrivacyPolicy() {
   const { t } = useTranslation('privacyPolicy');
   return (
-    <div>
+    <Container>
       <h1 className="titulo-xxl color-white pt-180 " dangerouslySetInnerHTML={{ __html: t('title') }}></h1>
       <div className='pb-180'>
         <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={300} height={20} />
@@ -173,7 +174,7 @@ export default function PrivacyPolicy() {
         <span className="color-lima"> info@wider.global </span>
         {t('contact_us.suffix')}
       </p>
-      <div class="full-width-container">
+      <div className="full-width-container">
         <Image
           src="/images/pink-drawing.svg"
           width={1500}
@@ -183,6 +184,6 @@ export default function PrivacyPolicy() {
           className="full-width-image"
         />
       </div>
-    </div>
+    </Container>
   )
 }

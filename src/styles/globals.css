@@ -41,32 +41,6 @@ body {
   }
 }
 
-/* Tablets entre 600px y 1023px */
-@media (min-width: 600px) and (max-width: 1023px) {
-  body {
-    width: 90%;
-    max-width: 1023px;
-    margin: 0 auto;
-  }
-}
-
-/* Pantallas pequeñas y medianas (laptops) entre 1024px y 1439px */
-@media (min-width: 1024px) and (max-width: 1439px) {
-  body {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-}
-
-/* Pantallas grandes (escritorio) a partir de 1440px */
-@media (min-width: 1440px) {
-  body {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-}
-
 /* Contenedor para las imágenes que ocuparán el 100% del ancho del viewport */
 .full-width-container {
   position: relative;
