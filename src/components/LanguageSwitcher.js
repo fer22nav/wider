@@ -1,4 +1,3 @@
-// components/LanguageSwitcher.js
 import { useRouter } from 'next/router';
 import styles from '../styles/languageSwitcher.module.css';
 
@@ -18,9 +17,17 @@ const LanguageSwitcher = () => {
       className={styles.languageSwitcher}
       aria-label={locale === 'es' ? 'Cambiar a Inglés' : 'Switch to Spanish'}
     >
-      <span className={locale === 'es' ? styles.active : ''}>ESPAÑOL</span>
+      <span
+        className={`${locale === 'es' ? styles.active : ''} fs-6 fs-md-5 fs-lg-4`} // Tamaños más moderados
+      >
+        ESPAÑOL
+      </span>
       <span className={styles.separator}> / </span>
-      <span className={locale === 'en' ? styles.active : ''}>ENGLISH</span>
+      <span
+        className={`${locale === 'en' ? styles.active : ''} fs-6 fs-md-5 fs-lg-4`} // Tamaños más moderados
+      >
+        ENGLISH
+      </span>
     </button>
   );
 };

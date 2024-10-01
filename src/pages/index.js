@@ -93,7 +93,7 @@ export default function Index() {
             <h2 className="titulo-l color-white mb-4 text-center text-md-start" dangerouslySetInnerHTML={{ __html: t('someClients') }}>
             </h2>
           </div>
-          <div className="col-12 col-md-12 col-lg-8 mt-md-5">
+          <div className="col-12 col-md-12 col-lg-8  mb-lg-0 mt-5 mt-md-0">
             <ul className="row list-unstyled">
               <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
                 <Image
@@ -300,7 +300,7 @@ export default function Index() {
 
       <section id="contact-section" className=" pt-180 pb-180">
         <h2 className="p-xl color-white mb-0 text-center" dangerouslySetInnerHTML={{ __html: t('constactMail') }}></h2>
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-end">
           <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={300} height={20} className="large-margin-right" />
         </div>
       </section>
