@@ -24,7 +24,14 @@
     border-left: none;
     padding-left: 0;
     margin-top: 20px;
+    display: block;
   }
+
+  .firstContainer {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
 }
 
 .bgVector1 {

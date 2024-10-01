@@ -101,6 +101,13 @@ h1, h2, h3, h4, h5, h6 {
   pointer-events: none;
 }
 
+@media (max-width: 1200px) {
+  .full-width-container-right {
+    right: -100px;
+  }
+}
+
+
 .arrow-container {
   position: relative;
   /* Esto asegura que la imagen dentro pueda ser posicionada de forma absoluta */
@@ -465,12 +472,46 @@ a:hover {
   }
 }
 
-.pt-180 {
+/* .pt-180 {
   padding-top: 180px;
 }
 
 .pb-180 {
   padding-bottom: 180px;
+} */
+
+.custom-padding-row {
+  padding-bottom: 90px;
+  padding-top: 90px
+}
+
+@media (min-width: 768px) {
+  .custom-padding-row {
+    padding-bottom: 350px;
+    padding-top: 50px
+  }
+}
+
+@media (min-width: 992px) {
+  .pt-180 {
+    padding-top: 180px;
+  }
+
+  .pb-180 {
+    padding-bottom: 180px;
+  }
+}
+
+.image-with-margin {
+  margin-left: 0;
+  /* Sin margen en móviles */
+}
+
+@media (min-width: 768px) {
+  .image-with-margin {
+    margin-left: 20px;
+    /* Aplica el margen en pantallas más grandes (tabletas y más grandes) */
+  }
 }
 
 .pt-5rm {

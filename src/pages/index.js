@@ -47,10 +47,10 @@ export default function Index() {
           </Row>
         </div>
         <Row style={{ paddingTop: '100px' }}>
-          <Col xs={12} md={6} lg={7} className="text-center text-md-start">
+          <Col xs={12} md={6} lg={6} className="text-center text-md-start">
             <h2 className="titulo-l color-white mb-0" dangerouslySetInnerHTML={{ __html: t('desingh2') }}></h2>
           </Col>
-          <Col xs={12} md={6} lg={5} className={`${styles.rightColumn} text-center text-md-start pe-0`}>
+          <Col xs={12} md={6} lg={6} className={`${styles.rightColumn} d-md-flex text-center text-md-start pe-0`}>
             <p className="p-m color-white mb-0" dangerouslySetInnerHTML={{ __html: t('desingP') }}></p>
           </Col>
         </Row>
@@ -59,7 +59,7 @@ export default function Index() {
         <Image src="/images/pink-outline-drawing2.svg" alt="Línea decorativa" className="full-width-image-left" layout="responsive" width={300} height={1000} />
       </div>
       <section className="">
-        <Row style={{ paddingBottom: '350px', marginTop: '50px' }}>
+        <Row className="custom-padding-row" >
           <div className="d-flex justify-content-center">
             <h2 className="titulo-xl color-white text-center text-md-start"> {t('experienceH2')}</h2>
           </div>
@@ -210,7 +210,7 @@ export default function Index() {
         <Row className="mb-5 mt-4">
           <Col xs={12} md={6} lg={6} className="mb-4 mb-md-0 ">
             <h2 className="titulo-l color-white" dangerouslySetInnerHTML={{ __html: t('expertsH2') }}></h2>
-            <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={300} height={20} style={{ marginLeft: '20px' }} />
+            <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={300} height={20} className="image-with-margin" />
           </Col>
           <Col xs={12} md={6} lg={6}>
             <p className="p-l color-white mb-0" dangerouslySetInnerHTML={{ __html: t('expertsP') }}></p>
@@ -298,9 +298,9 @@ export default function Index() {
         />
       </div>
 
-      <section id="contact-section" className=" pt-180 pb-180">
+      <section id="contact-section" className=" pt-180 pb-180 mt-5">
         <h2 className="p-xl color-white mb-0 text-center" dangerouslySetInnerHTML={{ __html: t('constactMail') }}></h2>
-        <div className="d-flex justify-content-end">
+        <div className="d-flex mb-5 justify-content-end">
           <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={300} height={20} className="large-margin-right" />
         </div>
       </section>
