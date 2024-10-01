@@ -66,6 +66,14 @@ function MyApp({ Component, pageProps }) {
           gtag('config', '${GA_TRACKING_ID}');
         `}
       </Script>
+      {/* Cookie banner script */}
+      <Script
+        strategy="afterInteractive"
+        src="//cdn.cookie-script.com/s/162af65b7001774c2e1d8c845bb27a32.js"
+        type="text/javascript"
+        charset="UTF-8"
+      />
+
       <div dir={direction}>
         <Header />
         <main>
