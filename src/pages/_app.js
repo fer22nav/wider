@@ -1,14 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/globals.css';
-import '../../i18n'; // Importar la inicialización de i18next
+import '../../i18n';
 import React, { useEffect, useState } from 'react';
 import { appWithTranslation } from 'next-i18next';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import Maintenance from './Maintenance'; // Modo mantenimiento (por si es necesario)
-import { GoogleAnalytics } from 'nextjs-google-analytics'; // Importa Google Analytics
+import Maintenance from './Maintenance';
+import Script from 'next/script';
+
+
+const GA_TRACKING_ID = 'G-YPYZMXV8BE';
 
 const metadata = {
   title: 'Home wider accessibility',
@@ -17,9 +20,8 @@ const metadata = {
 
 function MyApp({ Component, pageProps }) {
   const { locale } = useRouter();
-  const direction = locale === 'ar' || locale === 'he' ? 'rtl' : 'ltr'; // Manejo de texto RTL para árabe o hebreo
+  const direction = locale === 'ar' || locale === 'he' ? 'rtl' : 'ltr';
 
-  const GA_TRACKING_ID = 'G-YPYZMXV8BE';
 
   const isMaintenanceMode = false;
   const [mounted, setMounted] = useState(false);
@@ -52,10 +54,18 @@ function MyApp({ Component, pageProps }) {
         <meta name="description" content={metadata.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-
-      {/* Componente GoogleAnalytics */}
-      <GoogleAnalytics trackPageViews id={GA_TRACKING_ID} />
-
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GA_TRACKING_ID}');
+        `}
+      </Script>
       <div dir={direction}>
         <Header />
         <main>
