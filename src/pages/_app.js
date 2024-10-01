@@ -8,6 +8,7 @@ import Footer from '@/components/Footer';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Maintenance from './Maintenance'; // Modo mantenimiento (por si es necesario)
+import { GoogleAnalytics } from 'nextjs-google-analytics'; // Importa Google Analytics
 
 const metadata = {
   title: 'Home wider accessibility',
@@ -17,6 +18,8 @@ const metadata = {
 function MyApp({ Component, pageProps }) {
   const { locale } = useRouter();
   const direction = locale === 'ar' || locale === 'he' ? 'rtl' : 'ltr'; // Manejo de texto RTL para árabe o hebreo
+
+  const GA_TRACKING_ID = 'G-YPYZMXV8BE';
 
   const isMaintenanceMode = false;
   const [mounted, setMounted] = useState(false);
@@ -49,6 +52,10 @@ function MyApp({ Component, pageProps }) {
         <meta name="description" content={metadata.description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+
+      {/* Componente GoogleAnalytics */}
+      <GoogleAnalytics trackPageViews id={GA_TRACKING_ID} />
+
       <div dir={direction}>
         <Header />
         <main>
@@ -60,4 +67,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default appWithTranslation(MyApp); // No necesitas pasar nextI18NextConfig aquí
+export default appWithTranslation(MyApp);
