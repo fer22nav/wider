@@ -1,4 +1,12 @@
 {
+  "home": {
+    "title": "Inicio - Accesibilidad más amplia",
+    "description": "Bienvenido a la página de inicio para accesibilidad más amplia."
+  },
+  "maintenance": {
+    "title": "Próximamente - Wider",
+    "description": "Nuestro sitio está en construcción. Vuelve más tarde."
+  },
   "welcome_xs": "Hacemos<br /> más que<br /> accesibilidad",
   "welcome_md": "BHacemos más<br /> que<br /> accesibilidad",
   "welcome_lg": "Hacemos más que<br /> accesibilidad",

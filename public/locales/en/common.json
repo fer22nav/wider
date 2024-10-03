@@ -1,4 +1,12 @@
 {
+  "home": {
+    "title": "Home - Wider Accessibility",
+    "description": "Welcome to the Home page for wider accessibility."
+  },
+  "maintenance": {
+    "title": "Coming Soon - Wider",
+    "description": "Our site is under construction. Please check back later."
+  },
   "welcome_xs": "We make the digital world <span class='color-lima'>Wider</span>",
   "welcome_md": "We make the digital world <span class='color-lima'>Wider</span>",
   "welcome_lg": "We make the digital <br /> world <span class='color-lima'>Wider</span>",
