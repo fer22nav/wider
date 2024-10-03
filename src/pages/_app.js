@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
   const direction = locale === 'ar' || locale === 'he' ? 'rtl' : 'ltr';
 
 
-  const isMaintenanceMode = false;
+  const isMaintenanceMode = true;
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
