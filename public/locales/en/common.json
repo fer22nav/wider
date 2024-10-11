@@ -1,4 +1,7 @@
 {
+  "titleHome": "Home - Wider Accessibility",
+  "home": "Home Wider Accessibility",
+  "accessible_welcome": "We make the digital world Wider - Contact us",
   "welcome_xs": "We make the digital world <span class='color-lima'>Wider</span>",
   "welcome_md": "We make the digital world <span class='color-lima'>Wider</span>",
   "welcome_lg": "We make the digital <br /> world <span class='color-lima'>Wider</span>",
@@ -14,6 +17,7 @@
   "experienceP3": "Trained people",
   "someClients": "Our <span class='color-lima'>clients</span>",
   "expertsH2": "We only work <br />with <span class='color-lima'>experts</span>",
+  "accessible_expertsH2": "Our teams",
   "expertsP": "All our professionals have at least 4 years of<br /> experience in accessibility and are <br />internationally certified through the<br /> International Association of Accessibility<br /> Professionals (IAAP)",
   "LegalTeamTitle": "Legal <br />Team",
   "LegalTeamP": "We have lawyers and compliance experts from different parts of the world, many of whom have been co-authors and expert advisors on laws and standards.",

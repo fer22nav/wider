@@ -24,11 +24,22 @@ export default function Index() {
       <section>
         <div className={styles.firstContainer}>
 
-          <h1 className="opacity-0">Home wider accessibility</h1>
+          <h1 className="opacity-0">{('home')}</h1>
 
-          <h2 className="titulo-xxl color-white d-md-none" dangerouslySetInnerHTML={{ __html: t('welcome_xs') }}></h2>
-          <h2 className="titulo-xxl color-white d-none d-md-block d-lg-none" dangerouslySetInnerHTML={{ __html: t('welcome_md') }}></h2>
-          <h2 className="titulo-xxl color-white d-none d-lg-block" dangerouslySetInnerHTML={{ __html: t('welcome_lg') }}></h2>
+          <h2 className="d-md-none">
+            <span aria-hidden="true" className="titulo-xxl color-white" dangerouslySetInnerHTML={{ __html: t('welcome_xs') }}></span>
+            <span className="visually-hidden">{t('accessible_welcome')}</span>
+          </h2>
+
+          <h2 className="d-none d-md-block d-lg-none">
+            <span aria-hidden="true" className="titulo-xxl color-white" dangerouslySetInnerHTML={{ __html: t('welcome_md') }}></span>
+            <span className="visually-hidden">{t('accessible_welcome')}</span>
+          </h2>
+
+          <h2 className="d-none d-lg-block">
+            <span aria-hidden="true" className="titulo-xxl color-white" dangerouslySetInnerHTML={{ __html: t('welcome_lg') }}></span>
+            <span className="visually-hidden">{t('accessible_welcome')}</span>
+          </h2>
           <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={300} height={20} />
 
           <div className={styles.paragraphContainer}>
@@ -209,7 +220,10 @@ export default function Index() {
       <section>
         <Row className="mb-5 mt-4">
           <Col xs={12} md={6} lg={6} className="mb-4 mb-md-0 ">
-            <h2 className="titulo-l color-white" dangerouslySetInnerHTML={{ __html: t('expertsH2') }}></h2>
+            <h2>
+              <span aria-hidden="true" className="titulo-l color-white" dangerouslySetInnerHTML={{ __html: t('expertsH2') }}></span>
+              <span className="visually-hidden">{t('accessible_expertsH2')}</span>
+            </h2>
             <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={300} height={20} className="image-with-margin" />
           </Col>
           <Col xs={12} md={6} lg={6}>

@@ -1,4 +1,5 @@
 {
+  "titleAccessibilityStatement": "Declaración de Accesibilidad - Wider",
   "title": "Declaración de<br />accesibilidad",
   "wider": "Wider,",
   "entity_message": " entidad privada pone a disposición de sus usuarios el sitio web wider (http://wider.global) con el que pretende ofrecer toda la comunicación de interés a los usuarios de la manera más accesible, al mismo tiempo que intenta suprimir las posibles barreras que impiden el adecuado acceso.",
@@ -37,5 +38,5 @@
     "defensor_title": "Defensor del Pueblo",
     "contact": "Contacto: registro@defensordelpueblo.es / +34 900 101 025"
   },
-  "learn_more_with_email": "Si quieres saber más, solicita una cita con<br /> nuestros profesionales en<span class='color-lima'>info@wider.global</span>."
+  "learn_more_with_email": "Si quieres saber más, solicita una cita con<br /> nuestros profesionales en<span class='color-lima'> info@wider.global</span>."
 }

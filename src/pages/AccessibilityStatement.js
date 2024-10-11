@@ -69,7 +69,7 @@ export default function AccessibilityStatement() {
         <a href="mailto:accesibilidad@wider.global" className="color-white"> accesibilidad@wider.global</a>.
       </p>
 
-      <h2 className="h2-privacy-policy">{t('enforcement_procedure.title')}</h2>
+      {/* <h2 className="h2-privacy-policy">{t('enforcement_procedure.title')}</h2>
       <p className="p-nav color-white">{t('enforcement_procedure.description')}</p>
 
       <ul className="p-nav color-white">
@@ -85,7 +85,7 @@ export default function AccessibilityStatement() {
           <a href="http://www.defensordelpueblo.es" className="color-white"> www.defensordelpueblo.es</a>
         </li>
         <li>{t('enforcement_procedure.contact')}</li>
-      </ul>
+      </ul> */}
 
       <p
         className="p-xl color-white mb-50"
