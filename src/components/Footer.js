@@ -20,7 +20,7 @@ const Footer = () => {
               alt="Wider Logo" />
           </Col>
           <Col xs={12} md={4} lg={4} className='mb-4 '>
-            <p className='titulo-footer'>{t('offices')}</p>
+            <h3 className='titulo-footer'>{t('offices')}</h3>
             <p className='p-footer'>EEUU | España | Argentina | Perú | México</p>
             <p className='p-xs color-white ' >Copyright 2024</p>
             <Link href="/PrivacyPolicy" className='link-footer me-4 d-block d-md-inline mb-2 mb-md-0'>
@@ -33,7 +33,7 @@ const Footer = () => {
           </Col>
           <Col xs={12} md={4} lg={4} className='mb-4  d-md-flex flex-md-column justify-content-md-center align-items-md-center'>
             <div>
-              <p className='titulo-footer'>  {t('contact')}</p>
+              <h3 className='titulo-footer'>  {t('contact')}</h3>
               <p className='p-footer'>info@wider.global</p>
               <a href="https://www.linkedin.com/company/wider.global" className='text-decoration-none'>
                 <Image src="/images/in-icon.svg"
