@@ -3,11 +3,11 @@
   "title": "Política de <br /> privacidad",
   "updated": "Actualizado al 30 de septiembre de 2024",
   "widerP": "Wider Accesibilidad (\"nosotros\", \"nuestros\" o \"nos\") se compromete a proteger su privacidad. Esta Política de privacidad explica cómo Wider Accesibilidad recopila, usa y divulga su información personal. Esta Política de privacidad se aplica a nuestro sitio web, www.wider.global, y sus subdominios asociados (colectivamente, nuestro \"servicio\"). Al acceder o utilizar nuestro servicio, usted indica que ha leído, comprendido y aceptado nuestra recopilación, almacenamiento, uso y divulgación de su información personal como se describe en esta Política de privacidad y en nuestros Términos de servicio.",
-  "subtitle1": "Definiciones y Términos Clave",
+  "subtitle1": "Definiciones y Términos Claves",
   "definitionsP": "Para ayudar a explicar las cosas de manera más clara posible en esta política de privacidad, cada vez que se hace referencia a cualquier de estos términos, se definen estrictamente como:",
   "definitions": {
     "cookie": "Cookie: pequeña cantidad de datos generados por un sitio web y guardados por su navegador web. Se utiliza para identificar su navegador, proporcionar análisis, recordar información sobre usted, como su preferencia de idioma o información de inicio de sesión.",
-    "company": "Compañía: cuando esta política menciona \"compañía\", \"nosotros\", \"nos\" o \"nuestro\", se refiere a Accesisibility Consulting Lab, 8 The Green, suite R the city of Dover. Zip code 19901 que es responsable de su información en virtud de esta política de privacidad.",
+    "company": "Compañía: cuando esta política menciona \"compañía\", \"nosotros\", \"nos\" o \"nuestro\", se refiere a Accesisibility Consulting Lab, 8 The Green, suite R the city of Dover, Delaware. Zip code 19901 que es responsable de su información en virtud de esta política de privacidad.",
     "platform": "Plataforma: sitio web de internet, aplicación web o aplicación digital de cara al público de Wider Accesibilidad.",
     "country": "País: donde se encuentra Wider accesibilidad o los propietarios/fundadores de Wider, en este caso es Estados Unidos.",
     "client": "Cliente: se refiere a la empresa, organización o persona que se registra para utilizar el servicio Wider para gestionar las relaciones con sus consumidores o usuarios del servicio.",
@@ -21,10 +21,10 @@
     "you": "Usted: una persona o entidad que está registrada con Wider para utilizar los servicios."
   },
   "infoTitle": "Información recopilada automáticamente",
-  "infoP": "Existe cierta información como su direccion de protocopo de internet (IP) y / o las caracteristicas del navegador y del dispositivo, que se recopia automáticamnte cuando visita nuestro sitio web. Esta información se puede utilizar para conectar su computadora a internet. Otra inforamción recopilada automáticamente podria ser el flujo de clics completo del localizador uniforme de recursos (URL) hacia, a través y desde nuestro sitio web que puede incluir la fecha y la hora; números de cooker; partes del sitio que vio o buscó.Durante sus visitas podemos utilizar herramientas de software como JavaScript para medir y recopilar información de la sesión, incluidos los tiempos de respuesta de la página, los errores de descarga, la duración y la visitas a determinadas páginas, la información de interacción de la página (como el desplazamiento, los clics y el desplazamiento del mouse) y métodos utilizadas para navegar fuera de la página. También podemos recopilar información técnica para ayudarnos a identificar su dispositivo con fines de prevención y diagnóstico de fraude. Recopialmos automaticamente cierta información cuando visita, usa o navega el sitio. Esta información no revela su idenditada especifica)como su nombre o informacioón de contacto), pero puede incluir información de uso y dispositivo, como su direccion IP, navegador y caacteristicas del dispositivo, sistema operativo, preferencias de idioma, URL de referencia, nombre del dispositivo, país, ubicación, información sobre quién y cuándo utiliza nuestra información técnica. esta información es principalmente necesaria para mantener la seguridad y el funcionameitno de nuestra plataforma y para nuestros fines de análisis e informaes internos.",
-  "useInfoTitle": "¿Cómo usamos la inforamción que recopilamos?",
+  "infoP": "Existe cierta información como su dirección de protocolo de internet (IP) y / o las características del navegador y del dispositivo, que se recopila automáticamente cuando visita nuestro sitio web. Esta información se puede utilizar para conectar su computadora a internet. Otra información recopilada automáticamente podría ser el flujo de clics completos del localizador uniforme de recursos (URL) hacia, a través y desde nuestro sitio web que puede incluir la fecha y la hora; números de cooker; partes del sitio que vió o buscó. Durante sus visitas podemos utilizar herramientas de software como JavaScript para medir y recopilar información de la sesión, incluidos los tiempos de respuesta de la página, los errores de descarga, la duración y la visitas a determinadas páginas, la información de interacción de la página (como el desplazamiento, los clics y el desplazamiento del mouse) y métodos utilizados para navegar fuera de la página. También podemos recopilar información técnica para ayudarnos a identificar su dispositivo con fines de prevención y diagnóstico de fraude. Recopilamos automáticamente cierta información cuando visita, usa o navega el sitio. Esta información no revela su identidad específica (como su nombre o información de contacto), pero puede incluir información de uso y dispositivo, como su dirección IP, navegador y características del dispositivo, sistema operativo, preferencias de idioma, URL de referencia, nombre del dispositivo, país, ubicación, información sobre quién y cuándo utiliza nuestra información técnica. Esta información es principalmente necesaria para mantener la seguridad y el funcionamiento de nuestra plataforma y para nuestros fines de análisis e informes internos.",
+  "useInfoTitle": "¿Cómo usamos la información que recopilamos?",
   "data_use": {
-    "intro": "Cualquier de la información que recopilamos de usted puede usarse de la siguiente maneras:",
+    "intro": "Cualquier información que recopilamos de usted puede usarse de la siguiente maneras:",
     "personalize_experience": "Para personalizar su experiencia.",
     "improve_platform": "Para mejorar nuestra plataforma.",
     "improve_customer_service": "Para mejorar el servicio al cliente.",
@@ -33,7 +33,7 @@
   },
   "when_use_third_party_info": {
     "title": "¿Cuándo usa wider la información del cliente de terceros?",
-    "content": "Recibimos información de terceros cuando se comunica con nosotros. Por ejemplo, cuando nos envía su dirección de correo electrónico para mostrar interés en convertirse en cliente de Wider, recibimos información de un tercero que brinda servicios automáticos de detección de fraude a Wider."
+    "content": "Recibimos información de terceros cuando se comunican con nosotros. Por ejemplo, cuando nos envían su dirección de correo electrónico para mostrar interés en convertirse en cliente de Wider, recibimos información de un tercero que brinda servicios automáticos de detección de fraude a Wider."
   },
   "share_third_party_info": {
     "title": "¿Compartimos la información que recopilamos de terceros?",
@@ -57,7 +57,7 @@
     "content2": "Puede comunicarse con nosotros para:",
     "list1": "Actualizar o corregir su información.",
     "list2": "Cambiar sus preferencias con respecto a las comunicaciones y otra información que reciba de nosotros.",
-    "list3": "Recibir un registro de la información que tenemos relacionado con usted.",
+    "list3": "Recibir un registro de la información que tenemos relacionada con usted.",
     "content3": "Dichas actualizaciones, correcciones, cambios y eliminaciones no tendrán ningún efecto sobre otra información que mantenemos o información que hayamos proporcionado a terceros de acuerdo con esta política de privacidad antes de dicha actualización, corrección, cambio o eliminación."
   },
   "business_sale": {
@@ -74,7 +74,7 @@
   },
   "protect_info": {
     "title": "¿Cómo protegemos su información?",
-    "content": "Implementamos una variedad de medidas de seguridad para mantener la seguridad de su información personal cuando realiza un pedido, ingresa, envía o accede a su información personal. Ofrecemos el uso de un servidor seguro. Toda la información confidencial/crediticia suministrada se transmite a través de la tecnología Secure Socket Layer (SSL) y luego se encripta en nuestra base de datos de proveedores de pasarela de pago, accesible solo por aquellos autorizados con derechos especiales de acceso a dichos sistemas, quienes deben mantener la información confidencial. Después de una transacción, su información privada (tarjetas de crédito, números de seguro social, datos financieros, etc.) nunca se almacena. Sin embargo, no podemos garantizar la seguridad absoluta de la información que transmite a Wider, ni podemos garantizar que su información en el servicio no sea accedida, divulgada, alterada o destruida por una infracción de cualquiera de nuestras medidas físicas, técnicas o de gestión."
+    "content": "Implementamos una variedad de medidas de seguridad para mantener la seguridad de su información personal cuando realiza un pedido, ingresa, envía o accede a su información personal. Ofrecemos el uso de un servidor seguro. Toda la información confidencial/crediticia suministrada se transmite a través de la tecnología Secure Socket Layer (SSL) y luego se encripta en nuestra base de datos de proveedores de pasarela de pago, accesible sólo por aquellos autorizados con derechos especiales de acceso a dichos sistemas, quienes deben mantener la información confidencial. Después de una transacción, su información privada (tarjetas de crédito, números de seguro social, datos financieros, etc.) nunca se almacena. Sin embargo, no podemos garantizar la seguridad absoluta de la información que transmite a Wider, ni podemos garantizar que su información en el servicio no sea accedida, divulgada, alterada o destruida por una infracción de cualquiera de nuestras medidas físicas, técnicas o de gestión."
   },
   "governing_law": {
     "title": "Ley que rige",
@@ -120,7 +120,7 @@
     "data_protection_principles": {
       "title": "Los principios de protección de datos incluyen requisitos tales como:",
       "principle_1": "Los datos personales recopilados deben procesarse de manera justa, legal y transparente y solo deben usarse de la manera que una persona esperaría razonablemente.",
-      "principle_2": "Los datos personales solo deben recopilarse para cumplir con un propósito específico y solo deben usarse para ese propósito. Las organizaciones deben especificar por qué necesitan los datos personales cuando los recopilan.",
+      "principle_2": "Los datos personales sólo deben recopilarse para cumplir con un propósito específico y sólo deben usarse para ese propósito. Las organizaciones deben especificar por qué necesitan los datos personales cuando los recopilan.",
       "principle_3": "Los datos personales no deben conservarse más tiempo del necesario para cumplir con su propósito.",
       "principle_4": "Las personas cubiertas por el RGPD tienen derecho a acceder a sus propios datos personales. También pueden solicitar una copia de sus datos y que sus datos se actualicen, eliminen, restrinjan o muevan a otra organización."
     },
