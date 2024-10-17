@@ -152,12 +152,8 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 100;
 }
 
-@media (min-width: 992px) {
-  .large-margin-right {
-    margin-right: 360px;
-    /* Ajusta el valor del margen según lo que necesites */
-  }
-}
+.large-margin-right {}
+
 
 a {
   /* color: var(--primary-color); */

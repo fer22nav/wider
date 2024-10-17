@@ -316,8 +316,8 @@ export default function Index() {
       <section id="contact-section" className=" pt-180 pb-180 mt-5">
         <p className="p-l color-white mb-0 text-center " aria-hidden="true" dangerouslySetInnerHTML={{ __html: t('constactMail') }}></p>
         <h2 className="visually-hidden">{t('accessible_constactMail')}</h2>
-        <div className="d-flex mb-5 justify-content-end">
-          <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={300} height={20} className="large-margin-right" />
+        <div className="d-flex justify-content-center mb-5 ">
+          <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={250} height={20} className="large-margin-right" />
         </div>
       </section>
 
