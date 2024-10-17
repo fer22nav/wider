@@ -145,8 +145,8 @@ export default function Index() {
                 <Image
                   width={180}
                   height={80}
-                  src="/images/eafit.svg"
-                  alt="universidad EAFIT" />
+                  src="/images/wikimedia.svg"
+                  alt="wikimedia" />
               </li>
               <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
                 <Image
