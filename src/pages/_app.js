@@ -43,6 +43,18 @@ function MyApp({ Component, pageProps }) {
           <meta name="description" content="Nuestro sitio está en construcción. Vuelve pronto." />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GA_TRACKING_ID}');
+        `}
+        </Script>
         <Maintenance />
       </>
     );

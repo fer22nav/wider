@@ -15,7 +15,7 @@ const Header = () => (
               src="/images/wider-header-logo.svg"
               width={80}
               height={40}
-              alt="Ir a inicio"
+              alt="Ir a inicio"// ponerlo en ingles.
             />
           </Link>
         </div>
