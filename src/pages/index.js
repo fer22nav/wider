@@ -27,17 +27,17 @@ export default function Index() {
           <h1 className="opacity-0">{('home')}</h1>
 
           <h2 className="d-md-none">
-            <span className="opacity-0">{t('accessible_welcome')}</span>◘
-            <span aria-hidden="true" className="titulo-xxl color-white" dangerouslySetInnerHTML={{ __html: t('welcome_xs') }}></span>
+            <spans className="titulo-xxl color-white" dangerouslySetInnerHTML={{ __html: t('welcome_xs') }}></spans>
+            <span className="opacity-0">{t('accessible_welcome')}</span>
           </h2>
 
           <h2 className="d-none d-md-block d-lg-none">
+            <span className="titulo-xxl color-white" dangerouslySetInnerHTML={{ __html: t('welcome_md') }}></span>
             <span className="visually-hidden">{t('accessible_welcome')}</span>
-            <span aria-hidden="true" className="titulo-xxl color-white" dangerouslySetInnerHTML={{ __html: t('welcome_md') }}></span>
           </h2>
 
           <h2 className="d-none d-lg-block">
-            <span aria-hidden="true" className="titulo-xxl color-white" dangerouslySetInnerHTML={{ __html: t('welcome_lg') }}></span>
+            <span className="titulo-xxl color-white" dangerouslySetInnerHTML={{ __html: t('welcome_lg') }}></span>
             <span className="visually-hidden">{t('accessible_welcome')}</span>
           </h2>
           <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={300} height={20} />
@@ -220,9 +220,8 @@ export default function Index() {
       <section>
         <Row className="mb-5 mt-4">
           <Col xs={12} md={6} lg={6} className="mb-4 mb-md-0 ">
-            <h2>
-              <span aria-hidden="true" className="titulo-xl color-white" dangerouslySetInnerHTML={{ __html: t('expertsH2') }}></span>
-              <span className="visually-hidden">{t('accessible_expertsH2')}</span>
+            <h2 className="titulo-xl color-white">
+              {t('accessible_expertsH2')}
             </h2>
             <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={300} height={20} className="image-with-margin" />
           </Col>
@@ -316,7 +315,7 @@ export default function Index() {
       <section id="contact-section" className=" pt-180 pb-180 mt-5">
         <h2 className="opacity-0">{t('accessible_constactMail')}</h2>
         <p className="p-l color-white mb-0 text-center " aria-hidden="true" dangerouslySetInnerHTML={{ __html: t('constactMail') }}></p>
-        <div className="d-flex justify-content-center mb-5">
+        <div className="d-flex justify-content-center mb-5 ">
           <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={250} height={20} className="large-margin-right" />
         </div>
       </section>
