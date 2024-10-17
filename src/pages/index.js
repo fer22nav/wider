@@ -27,13 +27,13 @@ export default function Index() {
           <h1 className="opacity-0">{('home')}</h1>
 
           <h2 className="d-md-none">
+            <span className="opacity-0">{t('accessible_welcome')}</span>◘
             <span aria-hidden="true" className="titulo-xxl color-white" dangerouslySetInnerHTML={{ __html: t('welcome_xs') }}></span>
-            <span className="visually-hidden">{t('accessible_welcome')}</span>
           </h2>
 
           <h2 className="d-none d-md-block d-lg-none">
-            <span aria-hidden="true" className="titulo-xxl color-white" dangerouslySetInnerHTML={{ __html: t('welcome_md') }}></span>
             <span className="visually-hidden">{t('accessible_welcome')}</span>
+            <span aria-hidden="true" className="titulo-xxl color-white" dangerouslySetInnerHTML={{ __html: t('welcome_md') }}></span>
           </h2>
 
           <h2 className="d-none d-lg-block">
