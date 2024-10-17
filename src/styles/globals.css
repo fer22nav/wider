@@ -46,7 +46,12 @@ body {
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px !important;
+    --bs-gutter-x: 0 !important;
   }
+}
+
+.row {
+  --bs-gutter-x: 20px;
 }
 
 /* Contenedor para las imágenes que ocuparán el 100% del ancho del viewport */
@@ -450,6 +455,7 @@ a:hover {
 
 .card-title-ligth {
   color: #FBFBFB;
+  margin-left: 14px;
 }
 
 
@@ -461,21 +467,18 @@ a:hover {
   flex-direction: column;
   width: 100%;
   margin: 16px 0;
-  min-height: 400px;
 }
 
 
 @media (max-width: 1439px) {
   .card-container-small {
     margin: 24px 0;
-    min-height: 360px;
   }
 }
 
 @media (max-width: 600px) {
   .card-container-small {
     margin: 32px 0;
-    min-height: 100px;
   }
 }
 

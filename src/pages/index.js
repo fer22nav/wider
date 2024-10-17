@@ -243,7 +243,7 @@ export default function Index() {
                     height={33}
                     alt="legal Logo" />
                 </div>
-                <p className="titulo-s ps-2 card-title-ligth" dangerouslySetInnerHTML={{ __html: t('LegalTeamTitle') }}></p>
+                <p className="titulo-s card-title-ligth" dangerouslySetInnerHTML={{ __html: t('LegalTeamTitle') }}></p>
               </div>
               <p className="p-card-small" dangerouslySetInnerHTML={{ __html: t('LegalTeamP') }}></p>
             </div>
@@ -260,7 +260,7 @@ export default function Index() {
                     height={33}
                     alt="testing Logo" />
                 </div>
-                <p className="titulo-s ps-2 card-title-ligth" dangerouslySetInnerHTML={{ __html: t('testingTeamTitle') }}></p>
+                <p className="titulo-s card-title-ligth" dangerouslySetInnerHTML={{ __html: t('testingTeamTitle') }}></p>
               </div>
               <p className="p-card-small" dangerouslySetInnerHTML={{ __html: t('testingTeamP') }}></p>
             </div>
@@ -277,7 +277,7 @@ export default function Index() {
                     height={24}
                     alt="Accesibility Logo" />
                 </div>
-                <p className="titulo-s ps-2 card-title-ligth" dangerouslySetInnerHTML={{ __html: t('accesibilityTitle') }}></p>
+                <p className="titulo-s  card-title-ligth" dangerouslySetInnerHTML={{ __html: t('accesibilityTitle') }}></p>
               </div>
               <p className="p-card-small" dangerouslySetInnerHTML={{ __html: t('accesibilityP') }}></p>
             </div>
@@ -286,7 +286,7 @@ export default function Index() {
           {/* Tarjeta 4 */}
           <li className="col-xs-12 col-md-6 col-lg-3 mb-4 d-flex">
             <div className="card-container-small">
-              <div className="d-flex">
+              <div className="d-flex ">
                 <div className={styles.uxuiIcon}>
                   <Image
                     src="/images/uxui-icon.svg"
@@ -294,7 +294,7 @@ export default function Index() {
                     height={33}
                     alt="Wider Logo" />
                 </div>
-                <p className="titulo-s ps-2 card-title-ligth" dangerouslySetInnerHTML={{ __html: t('uxuiTitle') }}></p>
+                <p className="titulo-s card-title-ligth" dangerouslySetInnerHTML={{ __html: t('uxuiTitle') }}></p>
               </div>
               <p className="p-card-small" dangerouslySetInnerHTML={{ __html: t('uxuiP') }}></p>
             </div>
