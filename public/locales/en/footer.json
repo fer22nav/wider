@@ -2,5 +2,9 @@
   "offices": "Location",
   "contact": "Contact Us",
   "policylink": "Privacy Policy",
-  "statementLink": "Accessibility statement"
+  "statementLink": "Accessibility statement",
+  "usa": "USA",
+  "spain": "Spain",
+  "peru": "Peru",
+  "mexico": "Mexico"
 }

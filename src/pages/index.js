@@ -233,7 +233,7 @@ export default function Index() {
 
         <ul className="row list-unstyled">
           {/* Tarjeta 1 */}
-          <li className="col-xs-12 col-md-6 col-lg-3 mb-4 d-flex">
+          <li className="col-xs-12 col-md-6 col-lg-3 d-flex">
             <div className="card-container-small">
               <div className="d-flex">
                 <div className={styles.legalIcon}>
@@ -250,7 +250,7 @@ export default function Index() {
           </li>
 
           {/* Tarjeta 2 */}
-          <li className="col-xs-12 col-md-6 col-lg-3 mb-4 d-flex">
+          <li className="col-xs-12 col-md-6 col-lg-3 d-flex">
             <div className="card-container-small">
               <div className="d-flex">
                 <div className={styles.legalIcon}>
@@ -267,7 +267,7 @@ export default function Index() {
           </li>
 
           {/* Tarjeta 3 */}
-          <li className="col-xs-12 col-md-6 col-lg-3 mb-4 d-flex">
+          <li className="col-xs-12 col-md-6 col-lg-3 d-flex">
             <div className="card-container-small">
               <div className="d-flex">
                 <div className={styles.strategyIcon}>
@@ -284,7 +284,7 @@ export default function Index() {
           </li>
 
           {/* Tarjeta 4 */}
-          <li className="col-xs-12 col-md-6 col-lg-3 mb-4 d-flex">
+          <li className="col-xs-12 col-md-6 col-lg-3 d-flex">
             <div className="card-container-small">
               <div className="d-flex ">
                 <div className={styles.uxuiIcon}>
@@ -312,8 +312,10 @@ export default function Index() {
         />
       </div>
 
+
       <section id="contact-section" className=" pt-180 pb-180 mt-5">
-        <h2 className="p-xl color-white mb-0 text-center" dangerouslySetInnerHTML={{ __html: t('constactMail') }}></h2>
+        <p className="p-l color-white mb-0 text-center " aria-hidden="true" dangerouslySetInnerHTML={{ __html: t('constactMail') }}></p>
+        <h2 className="visually-hidden">{t('accessible_constactMail')}</h2>
         <div className="d-flex mb-5 justify-content-end">
           <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={300} height={20} className="large-margin-right" />
         </div>

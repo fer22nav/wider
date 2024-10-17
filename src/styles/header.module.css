@@ -11,7 +11,26 @@
 
 .logo img {
   width: 176px;
-  height: 47px;
+  height: auto;
+  /* Para mantener el aspect ratio */
+}
+
+@media (max-width: 1024px) {
+
+  /* Tablets */
+  .logo img {
+    width: 140px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* Móviles */
+  .logo img {
+    width: 120px;
+    height: auto;
+  }
 }
 
 .nav {

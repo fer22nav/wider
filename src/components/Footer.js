@@ -21,7 +21,7 @@ const Footer = () => {
           </Col>
           <Col xs={12} md={4} lg={4} className='mb-4 '>
             <h3 className='titulo-footer'>{t('offices')}</h3>
-            <p className='p-footer'>EEUU | España | Argentina | Perú | México</p>
+            <p className='p-footer'>{t('usa')} | {t('spain')} | Argentina | {t('peru')} | {t('mexico')}</p>
             <p className='p-xs color-white ' >Copyright 2024</p>
             <Link href="/PrivacyPolicy" className='link-footer me-4 d-block d-md-inline mb-2 mb-md-0'>
               {t('policylink')}

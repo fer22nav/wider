@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
   pointer-events: none;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
   .full-width-container-right {
     right: -100px;
   }
@@ -250,7 +250,6 @@ a:hover {
   font-weight: 700;
   line-height: 150%;
   letter-spacing: -0.96px;
-  ;
 }
 
 .p-m {
@@ -469,18 +468,6 @@ a:hover {
   margin: 16px 0;
 }
 
-
-@media (max-width: 1439px) {
-  .card-container-small {
-    margin: 24px 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .card-container-small {
-    margin: 32px 0;
-  }
-}
 
 /* .pt-180 {
   padding-top: 180px;
