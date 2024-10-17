@@ -62,7 +62,7 @@ export default function Index() {
             <h2 className="titulo-l color-white mb-0" dangerouslySetInnerHTML={{ __html: t('desingh2') }}></h2>
           </Col>
           <Col xs={12} md={6} lg={6} className={`${styles.rightColumn} d-md-flex text-center text-md-start pe-0`}>
-            <p className="p-m color-white mb-0" style={{ fontSize: '18px', lineHeight: '100%', letterSpacing: '-0.54px' }} dangerouslySetInnerHTML={{ __html: t('desingP') }}></p>
+            <p className="p-m color-white mb-0" dangerouslySetInnerHTML={{ __html: t('desingP') }}></p>
           </Col>
         </Row>
       </section>
@@ -72,7 +72,7 @@ export default function Index() {
       <section className="">
         <Row className="custom-padding-row" >
           <div className="d-flex justify-content-center">
-            <h2 className="titulo-xl color-white text-center text-md-start"> {t('experienceH2')}</h2>
+            <h2 className="titulo-xl color-white text-center text-md-start" style={{ padding: '80px' }}> {t('experienceH2')}</h2>
           </div>
 
           <ul className="list-unstyled row">
@@ -243,7 +243,7 @@ export default function Index() {
                     height={33}
                     alt="legal Logo" />
                 </div>
-                <p className="titulo-s ps-2" dangerouslySetInnerHTML={{ __html: t('LegalTeamTitle') }}></p>
+                <p className="titulo-s ps-2 card-title-ligth" dangerouslySetInnerHTML={{ __html: t('LegalTeamTitle') }}></p>
               </div>
               <p className="p-card-small" dangerouslySetInnerHTML={{ __html: t('LegalTeamP') }}></p>
             </div>
@@ -260,7 +260,7 @@ export default function Index() {
                     height={33}
                     alt="testing Logo" />
                 </div>
-                <p className="titulo-s ps-2" dangerouslySetInnerHTML={{ __html: t('testingTeamTitle') }}></p>
+                <p className="titulo-s ps-2 card-title-ligth" dangerouslySetInnerHTML={{ __html: t('testingTeamTitle') }}></p>
               </div>
               <p className="p-card-small" dangerouslySetInnerHTML={{ __html: t('testingTeamP') }}></p>
             </div>
@@ -277,7 +277,7 @@ export default function Index() {
                     height={24}
                     alt="Accesibility Logo" />
                 </div>
-                <p className="titulo-s ps-2" dangerouslySetInnerHTML={{ __html: t('accesibilityTitle') }}></p>
+                <p className="titulo-s ps-2 card-title-ligth" dangerouslySetInnerHTML={{ __html: t('accesibilityTitle') }}></p>
               </div>
               <p className="p-card-small" dangerouslySetInnerHTML={{ __html: t('accesibilityP') }}></p>
             </div>
@@ -294,7 +294,7 @@ export default function Index() {
                     height={33}
                     alt="Wider Logo" />
                 </div>
-                <p className="titulo-s ps-2" dangerouslySetInnerHTML={{ __html: t('uxuiTitle') }}></p>
+                <p className="titulo-s ps-2 card-title-ligth" dangerouslySetInnerHTML={{ __html: t('uxuiTitle') }}></p>
               </div>
               <p className="p-card-small" dangerouslySetInnerHTML={{ __html: t('uxuiP') }}></p>
             </div>
