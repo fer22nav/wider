@@ -33,12 +33,12 @@ export default function Index() {
 
           <h2 className="d-none d-md-block d-lg-none">
             <span className="titulo-xxl color-white" dangerouslySetInnerHTML={{ __html: t('welcome_md') }}></span>
-            <span className="visually-hidden">{t('accessible_welcome')}</span>
+            <span className="opacity-0">{t('accessible_welcome')}</span>
           </h2>
 
           <h2 className="d-none d-lg-block">
             <span className="titulo-xxl color-white" dangerouslySetInnerHTML={{ __html: t('welcome_lg') }}></span>
-            <span className="visually-hidden">{t('accessible_welcome')}</span>
+            <span className="opacity-0">{t('accessible_welcome')}</span>
           </h2>
           <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={300} height={20} />
 
@@ -58,11 +58,11 @@ export default function Index() {
           </Row>
         </div>
         <Row style={{ paddingTop: '100px' }}>
-          <Col xs={12} md={6} lg={6} className="text-center text-md-start">
-            <h2 className="titulo-l color-white mb-0" dangerouslySetInnerHTML={{ __html: t('desingh2') }}></h2>
+          <Col xs={12} md={6} lg={6} className="">
+            <h2 className="titulo-l color-white " dangerouslySetInnerHTML={{ __html: t('desingh2') }}></h2>
           </Col>
-          <Col xs={12} md={6} lg={6} className={`${styles.rightColumn} d-md-flex text-center text-md-start pe-0`}>
-            <p className="p-m color-white mb-0" dangerouslySetInnerHTML={{ __html: t('desingP') }}></p>
+          <Col xs={12} md={6} lg={6} >
+            <p className="p-m color-white " dangerouslySetInnerHTML={{ __html: t('desingP') }}></p>
           </Col>
         </Row>
       </section>
@@ -220,9 +220,7 @@ export default function Index() {
       <section>
         <Row className="mb-5 mt-4">
           <Col xs={12} md={6} lg={6} className="mb-4 mb-md-0 ">
-            <h2 className="titulo-xl color-white">
-              {t('accessible_expertsH2')}
-            </h2>
+            <h2 className="titulo-xl color-white" dangerouslySetInnerHTML={{ __html: t('accessible_expertsH2') }}></h2>
             <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={300} height={20} className="image-with-margin" />
           </Col>
           <Col xs={12} md={6} lg={6}>
