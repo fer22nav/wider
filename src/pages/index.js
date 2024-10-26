@@ -332,8 +332,7 @@ export default function Index() {
           width={1500}
           height={500}
           alt="linea decorativa"
-
-          className="full-width-image"
+          className="full-width-image mb-5"
         />
       </div>
     </Container>
