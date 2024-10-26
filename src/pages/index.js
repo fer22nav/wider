@@ -58,36 +58,53 @@ export default function Index() {
           </Row>
         </div>
         <Row style={{ paddingTop: '100px' }}>
-          <Col xs={12} md={6} lg={6} className="">
+          <Col xs={12} md={5} className=" mb-5 mb-md-0">
             <h2 className="titulo-l color-white " dangerouslySetInnerHTML={{ __html: t('desingh2') }}></h2>
           </Col>
-          <Col xs={12} md={6} lg={6} >
-            <p className="p-m color-white " dangerouslySetInnerHTML={{ __html: t('desingP') }}></p>
+          <Col xs={12} md={1} className="d-flex align-items-md-center">
+            <span className="separator"></span>
+          </Col>
+          <Col xs={12} md={6} lg={6} className="d-flex align-items-md-center">
+            <p className="p-m color-white mt-5 mt-md-0" dangerouslySetInnerHTML={{ __html: t('desingP') }}></p>
           </Col>
         </Row>
       </section>
       <div className="full-width-container-left">
         <Image src="/images/pink-outline-drawing2.svg" alt="Línea decorativa" className="full-width-image-left" layout="responsive" width={300} height={1000} />
       </div>
-      <section className="">
+      <section className="section-mobile-padding">
         <Row className="custom-padding-row" >
           <div className="d-flex justify-content-center">
-            <h2 className="titulo-xl color-white text-center text-md-start" style={{ padding: '80px' }}> {t('experienceH2')}</h2>
+            <h2 className="titulo-l color-white text-center text-md-start" style={{ padding: '80px' }}> {t('experienceH2')}</h2>
           </div>
 
           <ul className="list-unstyled row">
-            <li className="col-12 col-md-4 mb-4">
+            <li className="col-12 col-md-3 mb-4">
               <div className="text-center">
                 <p className="numbers-home">+30</p>
                 <p className="roboto">{t('experienceP1')}</p>
               </div>
             </li>
-            <li className="col-12 col-md-4 mb-4">
+            <div
+              role="separator"
+              aria-orientation="vertical"
+              className="d-flex col-md-1 justify-content-center align-items-center mb-4"
+            >
+              <span className="separator2"></span>
+            </div>
+            <li className="col-12 col-md-3 mb-4">
               <div className="text-center">
                 <p className="numbers-home">+200</p>
                 <p className="roboto">{t('experienceP2')}</p>
               </div>
             </li>
+            <div
+              role="separator"
+              aria-orientation="vertical"
+              className="d-flex col-md-1 justify-content-center align-items-center mb-4 "
+            >
+              <span className="separator2"></span>
+            </div>
             <li className="col-12 col-md-4 mb-4">
               <div className="text-center">
                 <p className="numbers-home">+10 mil</p>
@@ -101,74 +118,75 @@ export default function Index() {
       <section>
         <div className="row">
           <div className="col-12 col-md-12 col-lg-4 mb-md-5 mb-lg-0">
-            <h2 className="titulo-l color-white mb-4 text-center text-md-start" dangerouslySetInnerHTML={{ __html: t('someClients') }}>
+            <h2 className="titulo-l color-white mb-4 " dangerouslySetInnerHTML={{ __html: t('someClients') }}>
             </h2>
           </div>
           <div className="col-12 col-md-12 col-lg-8  mb-lg-0 mt-5 mt-md-0">
             <ul className="row list-unstyled">
-              <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
+              <li className="col-6 col-md-4 d-flex justify-content-center mb-4">
                 <Image
                   width={150}
                   height={80}
                   src="/images/smartecarte.svg"
                   alt="smartecarte" />
               </li>
-              <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
+              <li className="col-6 col-md-4 d-flex justify-content-center mb-4">
                 <Image
-                  width={300}
+                  width={200}
                   height={80}
                   src="/images/volvo.svg"
                   alt="volvo" />
               </li>
-              <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
+              <li className="col-6 col-md-4 d-flex justify-content-center mb-4">
                 <Image
-                  width={150}
+                  width={120}
                   height={80}
                   src="/images/bid.svg"
                   alt="bid" />
               </li>
-              <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
+              <li className="col-6 col-md-4 d-flex justify-content-center mb-4">
                 <Image
                   width={150}
                   height={80}
                   src="/images/modo.svg"
                   alt="modo" />
               </li>
-              <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
+              <li className="col-6 col-md-4 d-flex justify-content-center mb-4">
                 <Image
                   width={150}
                   height={80}
                   src="/images/rga.svg"
                   alt="rga" />
               </li>
-              <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
-                <Image
-                  width={180}
-                  height={80}
-                  src="/images/wikimedia.svg"
-                  alt="wikimedia" />
-              </li>
-              <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
+              <li className="col-6 col-md-4 d-flex justify-content-center mb-4">
                 <Image
                   width={150}
                   height={80}
                   src="/images/unibarcelona.svg"
                   alt="universidad de barcelona" />
               </li>
-              <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
+              <li className="col-6 col-md-4 d-flex justify-content-center mb-4">
                 <Image
                   width={150}
                   height={80}
                   src="/images/bcp.svg"
                   alt="bcp" />
               </li>
-              <li className="col-12 col-md-4 d-flex justify-content-center mb-4">
+              <li className="col-6 col-md-4 d-flex justify-content-center mb-4">
                 <Image
                   width={80}
                   height={80}
                   src="/images/itx.svg"
                   alt="ITX" />
               </li>
+              <li className="col-6 col-md-4 d-flex justify-content-center mb-4">
+                <Image
+                  width={180}
+                  height={80}
+                  src="/images/wikimedia.svg"
+                  alt="wikimedia" />
+              </li>
+
             </ul>
 
           </div>
@@ -201,13 +219,13 @@ export default function Index() {
         <Image
           src="/images/arrow-botton.svg"
           alt="Tablet and Mobile Arrow"
-          width={50}
-          height={200}
+          width={100}
+          height={100}
           className="mobile-arrow"
         />
       </div>
 
-      <div className="full-width-container">
+      <div className="full-width-container d-none d-md-block">
         <Image
           src="/images/blue-outline-drawing.svg"
           width={1500}
@@ -220,7 +238,7 @@ export default function Index() {
       <section>
         <Row className="mb-5 mt-4">
           <Col xs={12} md={6} lg={6} className="mb-4 mb-md-0 ">
-            <h2 className="titulo-xl color-white" dangerouslySetInnerHTML={{ __html: t('accessible_expertsH2') }}></h2>
+            <h2 className="titulo-l color-white" dangerouslySetInnerHTML={{ __html: t('accessible_expertsH2') }}></h2>
             <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={300} height={20} className="image-with-margin" />
           </Col>
           <Col xs={12} md={6} lg={6}>
@@ -298,23 +316,13 @@ export default function Index() {
           </li>
         </ul>
       </section>
-      <div className="full-width-container">
-        <Image
-          src="/images/blue-outline-drawing2.svg"
-          width={1500}
-          height={500}
-          alt="linea decorativa"
-          layout="responsive"
-          className="full-width-image"
-        />
-      </div>
-
-
-      <section id="contact-section" className=" pt-180 pb-180 mt-5">
-        <h2 className="opacity-0">{t('accessible_constactMail')}</h2>
-        <p className="p-l color-white mb-0 text-center " aria-hidden="true" dangerouslySetInnerHTML={{ __html: t('constactMail') }}></p>
-        <div className="d-flex justify-content-center mb-5 ">
-          <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={250} height={20} className="large-margin-right" />
+      <section id="contact-section" className="full-width-container pb-180 mt-5">
+        <div className="contact-section d-flex flex-column justify-content-center align-items-center ">
+          <h2 className="opacity-0">{t('accessible_constactMail')}</h2>
+          <p className="p-l color-white mb-0 text-center " aria-hidden="true" dangerouslySetInnerHTML={{ __html: t('constactMail') }}></p>
+          <div className="d-flex justify-content-center mb-5 ">
+            <Image src="/images/vector1-home.svg" alt="Línea decorativa" width={250} height={20} className="large-margin-right" />
+          </div>
         </div>
       </section>
 
@@ -324,7 +332,7 @@ export default function Index() {
           width={1500}
           height={500}
           alt="linea decorativa"
-          layout="responsive"
+
           className="full-width-image"
         />
       </div>

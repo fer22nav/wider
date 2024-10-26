@@ -15,7 +15,7 @@ const Footer = () => {
           <Col xs={12} md={4} lg={4} className="mb-5 d-flex justify-content-center align-items-center">
             <Image src="/images/logo-footer.svg"
               className=""
-              width={100}
+              width={150}
               height={56}
               alt="Wider Logo" />
           </Col>

@@ -67,16 +67,22 @@ body {
 
 /* Ajusta la imagen para que ocupe todo el ancho del contenedor */
 .full-width-image {
-  width: 100%;
+  min-width: 100vw;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  .full-width-image {
+    width: none;
+    height: auto;
+  }
 }
 
 /* Contenedor para las imágenes que ocuparán el 100% del ancho del viewport y se alinearán a la izquierda */
 .full-width-container-left {
   position: absolute;
-  width: 100vw;
   left: 0;
-  margin-left: -20vw;
+  margin-left: -4vw;
   margin-right: 0;
   overflow: hidden;
   z-index: -1;
@@ -84,9 +90,34 @@ body {
 
 /* Ajusta la imagen para que ocupe todo el ancho del contenedor */
 .full-width-image-left {
+  position: relative;
   width: 1500px;
   height: auto;
-  transform: translateY(-20px);
+  top: -10px
+}
+
+@media (max-width: 768px) {
+  .full-width-container-left {
+    overflow-x: visible;
+    /* Permitir que la imagen sobresalga horizontalmente */
+  }
+
+  .full-width-image-left {
+    min-width: 1000px;
+    /* Asegura que la imagen mantenga su tamaño mínimo */
+    width: auto;
+    /* No escalar la imagen al tamaño del contenedor */
+    position: relative;
+    left: -18%;
+    top: -220px;
+    /* Desplazar hacia la izquierda para sobresalir */
+  }
+}
+
+@media (min-width: 768px) {
+  .section-mobile-padding {
+    padding-top: 130px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -116,10 +147,49 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 1440px) {
   .full-width-container-right {
-    right: -100px;
+    right: -125px;
   }
 }
 
+@media (max-width: 768px) {
+
+  /* Ajuste para mobile */
+  .full-width-container-right {
+    display: none;
+  }
+}
+
+.separator {
+  width: 1px;
+  height: 118px;
+  /* En desktop, altura completa */
+  background-color: #F4ECE4;
+}
+
+/* En mobile, la línea se vuelve horizontal */
+@media (max-width: 768px) {
+  .separator {
+    width: 118px;
+    /* Ancho completo en mobile */
+    height: 1px;
+  }
+}
+
+.separator2 {
+  width: 1px;
+  height: 70px;
+  /* En desktop, altura completa */
+  background-color: #f4ece462;
+}
+
+/* En mobile, la línea se vuelve horizontal */
+@media (max-width: 768px) {
+  .separator2 {
+    width: 70px;
+    /* Ancho completo en mobile */
+    height: 1px;
+  }
+}
 
 .arrow-container {
   position: relative;
@@ -147,17 +217,29 @@ h1, h2, h3, h4, h5, h6 {
 
 .mobile-arrow {
   position: absolute;
-  top: -1000px;
-  left: 90%;
+  top: -650px;
+  left: 40%;
   z-index: 100;
 }
 
-.large-margin-right {}
+.contact-section {
+  min-width: 100vw;
+  min-height: 600px;
+  background-image: url('/images/blue-outline-drawing2.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
 
-
-a {
-  /* color: var(--primary-color); */
-  /* text-decoration: none; */
+@media (max-width: 768px) {
+  .contact-section {
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 a:hover {
@@ -171,7 +253,7 @@ a:hover {
 
 .titulo-xxl {
   font-family: var(--font-readex-pro);
-  font-size: clamp(2.5rem, 6vw + 1rem, 80px);
+  font-size: clamp(48px, 6vw, 80px);
   font-style: normal;
   font-weight: 500;
   line-height: clamp(2.5rem, 6vw + 1rem, 80px);
@@ -189,7 +271,7 @@ a:hover {
 
 .titulo-l {
   font-family: var(--font-readex-pro);
-  font-size: clamp(1.75rem, 4vw + 1rem, 56px);
+  font-size: clamp(48px, 6vw, 56px);
   font-style: normal;
   font-weight: 400;
   line-height: 120%;
@@ -241,7 +323,7 @@ a:hover {
 
 .p-l {
   font-family: var(--font-nunito-sans);
-  font-size: clamp(1.125rem, 2vw + 0.5rem, 32px);
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
@@ -250,7 +332,7 @@ a:hover {
 
 .p-m {
   font-family: var(--font-nunito-sans);
-  font-size: clamp(1rem, 1.75vw + 0.5rem, 24px);
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
@@ -500,10 +582,9 @@ a:hover {
   /* Sin margen en móviles */
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .image-with-margin {
-    margin-left: 20px;
-    /* Aplica el margen en pantallas más grandes (tabletas y más grandes) */
+    width: 150px;
   }
 }
 
