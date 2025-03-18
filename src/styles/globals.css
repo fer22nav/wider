@@ -98,19 +98,20 @@ body {
 
 @media (max-width: 768px) {
   .full-width-container-left {
-    overflow-x: visible;
-    /* Permitir que la imagen sobresalga horizontalmente */
+    overflow-x: hidden;
+    /* Evita que la imagen sobresalga horizontalmente */
   }
 
   .full-width-image-left {
-    min-width: 1000px;
-    /* Asegura que la imagen mantenga su tamaño mínimo */
-    width: auto;
-    /* No escalar la imagen al tamaño del contenedor */
+    min-width: unset;
+    /* Elimina el tamaño mínimo */
+    width: 100%;
+    /* Asegura que la imagen ocupe el ancho del contenedor */
     position: relative;
-    left: -18%;
-    top: -220px;
-    /* Desplazar hacia la izquierda para sobresalir */
+    left: 0;
+    /* Centra la imagen horizontalmente */
+    top: 0;
+    /* Ajusta la posición vertical para que sea visible */
   }
 }
 
